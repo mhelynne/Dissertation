@@ -1,0 +1,808 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                    %
+%               Modelo de Dissertação                %
+%                                                    %
+% Elaboração  : Grupo PET-Tele                       %
+% Responsáveis: Marcio Camoleze de Andrade           %
+%               Thiago Muniz de Souza                %
+% Orientação  : Prof. Alexandre Santos de la Vega    %
+% Inicio: ago/2007                                   %
+% Ultima modificacao: fev/2008                       %
+%                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper,oneside]{book}
+
+\pagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Pacotes para acentuação %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage[ansinew]{inputenc}
+
+%%%%%%%%%%%
+
+\usepackage[brazilian]{babel}
+
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+%%%%%%%%%%%
+
+\linespread{1.5} % espaçamento entre linhas
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              Formatação da Página                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% horizontal
+\setlength{\hoffset}{-1in}
+
+\setlength{\oddsidemargin}{3.0cm} 
+
+\setlength{\textwidth}{160mm} % (210mm - 30mm - 20mm)
+
+\setlength{\parindent}{1.25cm} % identação de cada parágrafo
+
+% vertical
+\setlength{\voffset}{-1in}
+\addtolength{\voffset}{2.0cm}
+
+\setlength{\topmargin}{0.0cm}
+
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm}
+
+\setlength{\textheight}{247mm} % (297mm - 30mm - 20mm)
+
+\setlength{\parskip}{2mm}
+
+%\setlength{\footskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Comece a cortar aqui !!!   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Capa do Template                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{titlepage}
+ \noindent 
+ \rule{\textwidth}{1ex} \\ [1ex]
+ \begin{center}
+  {\Large \textsc{Universidade Federal de Alagoas} } \\ [1.5ex]
+  {\Large \textsc{Instituto de Computação} } \\ [1.5ex]
+  {\Large \textsc{Programa de Pós-Graduação em Informática} } \\ [1.5ex]
+  {\Large \textsc{Mestrado em Informática} } \vfill
+
+  {\Huge Identificação automática de soft skills em estudantes de programação utilizando um juiz online para definição de métricas} \vfill
+	
+  {\Large Maria Helynne Lima Silva} \\ [1.5ex]
+  {\Large Orientador: Prof. Rodrigo de Barros Paes} \\ [3ex]
+  {\Large Maceió - AL} \\ [1.5ex]
+  {\Large Novembro / 2014}
+ \end{center}\vspace{1ex}
+ \rule{\textwidth}{1ex}
+\end{titlepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    Apresentação                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{gobble}
+% retira a numeração da página até quem um novo \pagenumbering{} seja usado
+
+\part*{ {\huge Parte I} \\[1ex] Apresentação}
+% utilizamos asterisco para que "Parte" nao seja inserida no sumário
+
+\chapter*{Modelo para 
+%elaboração de 
+monografia}
+
+Este documento foi desenvolvido pelo grupo PET-Tele a fim de orientar 
+todos aqueles que estiverem produzindo uma monografia utilizando o 
+editor de texto LaTeX.
+%
+Nele, é apresentada a formatação necessária para a elaboração da 
+monografia, segundo os padrões da Universidade Federal Fluminense, 
+bem como algumas dicas para a edição de seu texto.
+
+A formatação segue as orientações encontradas em
+\textbf{\textit{Apresentação de Trabalhos Monográficos de Conclusão de Curso}, 
+        8a. edição revisada, 
+        Estela dos Santos Abreu e José Carlos Abreu Teixeira, 
+        EdUFF, Niterói, Rio de Janeiro, 2005.
+       }
+
+As dicas foram originaram-se nas seguintes publicações: 
+1) \textbf{\textit{Metologia do Trabalho Científico},
+        Antônio J. Severino, 
+        22a. edição, revista (de acordo com a ABNT) e ampliada,
+        7a. reimpressão,
+        Cortez Editora, São Paulo, SP, 2006
+       }
+e
+2)
+\textbf{\textit{Como se faz uma tese},
+        Umberto Eco,
+        20a. edição,
+        Editora Perspectiva, São Paulo, SP, 2005.
+       }
+
+\bigskip
+\begin{flushright}
+\textbf{Grupo PET-Tele}
+\end{flushright}
+
+
+\thispagestyle{empty}
+\pagebreak
+
+\thispagestyle{empty}
+
+\part*{ {\huge Parte II} \\[1ex] Modelo de Monografia para o Mestrado}
+
+\thispagestyle{empty}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Pare de cortar  aqui !!!   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Capa da Monografia                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+  \begin{center}
+    \Large{\textsc{Universidade Federal de Alagoas} \\
+           \textsc{Instituto de Computação} \\ 
+           \textsc{Programa de Pós-Graduação em Informática} \\
+           \textsc{Mestrado em Informática} 
+          }
+    \par\vfill
+    \LARGE{Maria Helynne Lima Silva}
+    \par\vfill
+%    \bigskip
+    \LARGE{Identificação automática de soft skills em estudantes de programação utilizando um juiz online para definição de métricas}
+    \par\vfill
+    \Large{Maceió - AL\\2014}
+  \end{center}
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                Numeracao em romano                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{roman}
+\setcounter{page}{2}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Folha de Rosto                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{center}
+
+MARIA HELYNNE LIMA SILVA
+
+\vfill
+
+IDENTIFICAÇÃO AUTOMÁTICA DE SOFT SKILLS EM ESTUDANTES DE PROGRAMAÇÃO UTILIZANDO UM JUIZ ONLINE PARA DEFINIÇÃO DE MÉTRICAS
+
+\vspace{3.0cm}
+
+\begin{flushright}
+\begin{minipage}{0.45\textwidth}
+
+Dissertação apresentada ao Curso de Mestrado \linebreak em Informática da Universidade Federal \linebreak de Alagoas, como requisito parcial para \linebreak obtenção do Grau de Mestre em Informática. Linha de Pesquisa: Engenharia de Sistemas Computacionais.
+
+\end{minipage}
+\end{flushright}
+
+\vspace{3.0cm}
+
+Orientador: Prof. Dr. RODRIGO DE BARROS PAES
+
+\vfill
+
+Maceió - AL\\2014
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 Folha de Aprovação                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+
+MARIA HELYNNE LIMA SILVA
+
+\vspace{1.0cm}
+
+IDENTIFICAÇÃO AUTOMÁTICA DE SOFT SKILLS EM ESTUDANTES DE PROGRAMAÇÃO UTILIZANDO UM JUIZ ONLINE PARA DEFINIÇÃO DE MÉTRICAS
+
+\vspace{1.0cm}
+
+\begin{flushright}
+\begin{minipage}{0.45\textwidth}
+
+Dissertação apresentada ao Curso de Mestrado \linebreak em Informática da Universidade Federal \linebreak de Alagoas, como requisito parcial para \linebreak obtenção do Grau de Mestre em Informática. Linha de Pesquisa: Engenharia de Sistemas Computacionais.
+
+\end{minipage}
+\end{flushright}
+
+\vfill
+
+\begin{flushleft}
+
+Aprovada em MÊS de ANO.
+
+\end{flushleft}
+
+\vfill
+
+BANCA EXAMINADORA
+
+\vfill
+
+\hrulefill \\Prof. Dr. RODRIGO DE BARROS PAES - Orientador\\UNIVERSIDADE FEDERAL DE ALAGOAS\\
+
+\vfill
+
+\hrulefill \\Prof. Dr. LEANDRO DIAS DA SILVA\\UNIVERSIDADE FEDERAL DE ALAGOAS\\
+
+\vfill
+
+\hrulefill \\Prof. Dr. MÁRCIO DE MEDEIROS RIBEIRO\\UNIVERSIDADE FEDERAL DE ALAGOAS\\
+
+\vfill
+
+\hrulefill \\Prof. Dr. HYGGO OLIVEIRA DE ALMEIDA\\UNIVERSIDADE FEDERAL DE CAMPINA GRANDE\\
+
+\vfill
+
+Maceió - AL\\2014
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	               Dedicatória                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flushright}
+\begin{minipage}{0.5\textwidth}
+
+\vspace{15.0cm} % espaço do topo até o início da dedicatória 
+
+\textit{Tudo posso naquele que me fortalece}.
+
+\end{minipage}
+\end{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	              Agradecimentos                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Agradecimentos}
+\addcontentsline{toc}{chapter}{Agradecimentos}
+
+\thispagestyle{myheadings}
+
+\noindent
+
+Acima de tudo, agradeço a Deus. Sou grata pelo seu infinito amor, graça e sabedoria que me conduziram e fortaleceram, não somente durante a elaboração deste trabalho, mas em toda a caminhada. Obrigada Deus por cada milagre e por estar comigo em todos os momentos, sem Você nada seria possível. A Deus seja honra e glória para todo o sempre!
+
+Sou grata a toda minha família. Agradeço aos meus pais Odmir José da Silva e Maria Eliziane Lima Silva pelo cuidado, incentivo e orações. Vocês são presentes de Deus em minha vida. 
+
+Agradeço à Universidade Federal de Alagoas (UFAL), especialmente, ao Instituto de Computação (IC), por ter oferecido estrutura para realização do curso. À cada professor que transmitiu seus conhecimentos. À banca examinadora por avaliar meu trabalho. Um agradecimento especial ao professor Rodrigo Paes por suas ideias, contribuições e orientação.
+
+Acredito que cada um dos que estiveram comigo, direta ou indiretamente, foram pessoas que Deus preparou para me ajudar e peço que Ele os abençoe.
+Meus sinceros agradecimentos!
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Lista de Ilustrações                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Lista de Figuras}
+
+\thispagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Lista de Tabelas                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\listoftables
+\addcontentsline{toc}{chapter}{Lista de Tabelas}
+
+\thispagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       Sumário                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+\thispagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            Resumo na língua vernácula            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Resumo}
+\addcontentsline{toc}{chapter}{Resumo}
+
+\thispagestyle{myheadings}
+
+Esta parte é destinada ao resumo de seu trabalho. Ela deve ser escrita na língua 
+vernácula e em um idioma de grande divulgação (inglês, francês, espanhol, por exemplo). 
+É aconselhável que seja feita por último, pois após acabar o trabalho será possível 
+uma compreensão mais abrangente do mesmo. O resumo não deve possuir nenhum aprofundamento 
+teórico, mas sim conter a síntese dos pontos relevantes da monografia, tais como gênero 
+do trabalho, finalidade, metodologia, resultados e conclusões. Ele deve estar na 
+terceira pessoa do singular, possuir uma extensão de 150 a 500 palavras digitadas 
+em espaço simples e em parágrafo único. Deve ser seguido pelas palavras-chave 
+de seu trabalho.\\
+
+Palavras-chave: Monografia. LaTeX. Dicas. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Abstract                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\thispagestyle{myheadings}
+
+This part is destined to the abstract of your monograph. It must be written in the vernacular language and in an idiom of great popularization (English, French, Spanish, for example). This part should be done at last, because just after finishing the work it will be possible an overall understanding of the same. The abstract should not bring any further information, it is just the summary of the relevants aspects of the monograph, such as work gender, finality, methodology, results and conclusions. It must be written impersonally, to possess an extension from 150 to 500 words typed in simple space and in only one paragraph. It must be followed by the keywords of your monograph.\\
+
+Keywords: Monograph. LaTeX. Hints.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                Numeracao em arabico                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\pagenumbering{arabic}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Introdução                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introdução}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+Dados os avanços da tecnologia, a popularização do uso de computadores e aplicação da informática em diversas áreas como ciência, educação, saúde e etc., o mercado de trabalho no setor de tecnologia da informação (TI) apresenta alta demanda por profissionais. Segundo um estudo estudo encomendado pela Cisco na América Latina e realizado pela empresa de consultoria IDC \cite{cisco:13}, o Brasil já é o 4º maior centro de TI do mundo, ficando atrás apenas dos Estados Unidos, China e Japão. TI é o segmento do mercado brasileiro que mais cresce. 
+
+% www.cisco.com/assets/csr/pdf/IDC_Skills_Gap_-_LatAm.pdf
+
+O estudo aponta que a demanda por profissionais de tecnologia da informação e comunicação (TIC) no Brasil excederá a oferta em 32\% no ano de 2015. Em 2014, aproximadamente 100 mil vagas de trabalho foram abertas e esse número chegará a 120 mil em 2015. Esta demanda emergente implica numa necessidade de qualificação dos profissionais da área de TI. Encontrar profissionais qualificados é essencial para que as empresas do ramo evitem custos desnecessários, melhorem a eficiência de suas atividades e criem vantagens competitivas.
+
+% O Brasil é o segundo país com dificuldades para encontrar candidatos tecnicamente qualificados. Os investimentos em TI por parte das empresas e governo para atender a Copa do Mundo e os Jogos Olímpicos, 2014 e 2016, respectivamente, e os recentes incentivos fiscais do Governo sobre equipamentos de rede (incluindo dispositivos para o consumidor, como smartphones) contribuem para aumentar a lacuna de habilidades. 
+ 
+No entanto, antes de se tornar um profissional qualificado, um indivíduo precisa anteriormente ser um estudante. O início de uma carreira profissional está no processo de aprendizagem e formação. Nesta fase, precisarão ser conhecidas e desenvolvidas as habilidades necessárias para se tornar um profissional qualificado.
+
+A universidade tem um papel relevante nesse processo. Torna-se essencial que os educadores dos futuros profissionais conheçam os requisitos para formá-los, oferecendo uma educação que combina conhecimento do profissional e das necessidades do mercado de trabalho. Ou seja, é preciso saber identificar as características que compõem o perfil de profissional qualificado com o objetivo de guiar os aprendizes e ensiná-los a desenvolver as habilidades necessárias.
+
+No início da carreira de um profissional de TI, a demanda por emprego é alta para atividades relacionadas ao processo de desenvolvimento de software \cite{kennan:08}. Uma das atividades nesse processo é a de programador de software. O programador é responsável por traduzir o projeto do software em código-fonte. Nesse contexto, muitas habilidades técnicas são necessárias, tais como conhecimento em linguagens de programação e banco de dados.
+
+No entanto, há uma consciência crescente de que apenas as habilidades técnicas não são suficientes para o sucesso no desenvolvimento de software, especialmente no mercado de trabalho de hoje, que é dinâmico, complexo e competitivo \cite{joseph:10}. Por isso, gestores e profissionais de recursos humanos também consideram as habilidades não-técnicas como fatores importantes na qualificação de um profissional.
+
+Habilidades não técnicas, também conhecidas como soft skills, são características associadas à personalidade, como por exemplo, ser comunicativo, persistente, atencioso, etc. As soft skills guiam um indivíduo em suas ações, decisões e comportamento. Um profissional que busca desenvolver soft skills irá apresentar capacidade de influência, maior liderança e gestão de relacionamento \cite{hjyunus:12}.
+
+\section{Objetivos}
+
+Como as soft skills constituem um papel relevante para a qualificação de um profissional, é necessário entender quais delas são requeridas para os profissionais de desenvolvimento de software.
+
+O foco deste estudo está no papel do programador de software. Visamos desenvolver maneiras de identificar as soft skills de um programador de software em indivíduos que ainda estão em processo de formação profissional, ou seja, em estudantes de cursos superiores que estão aprendendo programação.
+
+Propomos que essa identificação seja feita de maneira automática, através da observação dos mesmos em contexto virtual. No nosso caso, trata-se de um ambiente de programação online (juiz online), que pode ser descrito como uma ferramenta que contém problemas de programação, os quais são resolvidos pelos usuários através soluções enviadas pelos mesmos e avaliadas pela ferramenta.
+
+Portanto, os objetivos deste estudo incluem conhecer as soft skills importantes para o programador de software e identificá-las, de maneira automática, em estudantes de programação que são usuários de um juiz online.
+
+\section{Metodologia}
+
+Para atingir os objetivos deste estudo, inicialmente é preciso fazer um levantamento de quais são as soft skills relevantes para um programador, compreender o que cada uma delas significa e como se aplicam no contexto dessa profissão. Esse conhecimento possibilita um embasamento teórico para a definição de métricas a serem aplicadas no contexto de um juiz online, as quais servem como indicadores para identificar se os usuários possuem soft skills.
+
+Portanto, a metodologia de desenvolvimento deste estudo inclui: 
+
+\begin{enumerate}[(i)]
+	\item Fazer um levantamento das soft skills importantes para profissionais de TI, com foco no papel de programador de software;
+	\item Entender o conceito de cada soft skill do programador;
+	\item Definir métricas a serem aplicadas no contexto de um juiz online para identificação automática de soft skills dos usuários.
+\end{enumerate}
+
+O levantamento das soft skills visa identificar os principais atributos profissionais que são requeridos no ramo de TI, com foco no programador de software. Nesse sentido, foi feito um levantamento bibliográfico que possibilitou uma visão geral das soft skills que têm sido buscadas pelas empresas e que são consideradas diferencial de sucesso para um programador e profissionais de TI.
+
+Com base no levantamento bibliográfico, as soft skills que foram abordadas neste estudo são: análise e resolução de problemas, atenção aos detalhes, aprendizagem rápida, persistência, comunicação e trabalho independente. 
+
+As soft skills listadas foram detalhadas em seus significados e aplicações, com o objetivo de melhor entender o que cada uma delas representa no ambiente de trabalho da profissão do programador e levantar informações suficientes para definir meios de identificá-las de maneira automática.
+
+Para conceitualizar as soft skills, esta pesquisa buscou associá-las a teorias de psicologia que tratam a respeito de personalidade. Especificamente, propõe-se a associação das soft skills com os traços de personalidade descritos pelo Modelo dos Cinco Fatores (Five Factor Model - FFM) \cite{costa:85}. 
+
+Como dito anteriormente, esse conhecimento teórico é importante para subsidiar o desenvolvimento das métricas para identificação das soft skills, as quais serão aplicadas no contexto de um juiz online. Neste estudo utilizamos para este fim o juiz online Huxley \cite{paes:13}, o qual pode ser acessado através do endereço eletrônico www.thehuxley.com.
+
+\section{Relevância}
+
+As contribuições deste trabalho estão voltadas para ampliar a compreensão dos aspectos humanos relacionados ao perfil do programador. Como qualquer outra atividade de desenvolvimento de software, a programação envolve um elemento humano que precisa ser considerado, afinal os produtos de software são desenvolvidos por pessoas e para pessoas \cite{john:05}.
+
+Ao fazer o levantamento e conceitualização das soft skills relevantes para papel do programador de software, esse profissional poderá entender o que o ambiente de trabalho exige, além ser estimulado à reflexão sobre quais habilidades possui e quais precisam ser melhoradas.
+
+Para estudantes de programação e seus educadores, isso também é aplicável. Baseando-se no fato de que o aprendizado é a base que constitui o profissional, é importante que ainda enquanto estudantes, as habilidades necessárias para o desempenho da função de programador sejam identificadas. Isso auxilia ao aluno conhecer em que será exigido no mercado de trabalho. Também aos educadores, auxilia no sentido de conhecer como incentivá-los em seus pontos fortes e como guiá-los no desenvolvimento das habilidades que merecem mais atenção.
+
+Essa identificação é importante em estágios iniciais da carreira do profissional, pois é uma fonte para indicação dos mesmos à contratação em primeiro emprego ou estágios. Como estudantes, os indivíduos ainda não possuem experiência profissional. Para empresas que estão a contratar, resta apenas indicações da universidade e de seus educadores.
+Além disso, as métricas propostas por este trabalho podem ser implantadas em um juiz online, como o Huxley. O ambiente de programação online que implementar essas métricas pode contar com uma nova funcionalidade de identificar soft skills em seus usuários.
+
+Até o momento, existem alguns estudos que reforçam a importância de soft skills para um profissional programador que, no geral, apenas indicam uma lista delas. No entanto, profissionais, estudantes, educadores e empresas de programação precisam de mais informações, conceitos sobre o significado de cada soft skill e o que exatamente elas representam quando se trata de personalidade e características de um indivíduo.
+
+Por isso, este trabalho se propõe a suprir esta necessidade de um estudo mais exploratório, não só para citar as soft skills importantes para os programadores, mas também abordar os seus conceitos e definir formas de identificá-los em indivíduos.
+
+\section{Validação}
+
+Os resultados deste trabalho foram gerados através da aplicação das métricas para identificar soft skills em um grupo de usuários do Huxley. Para validação dos resultados foi conduzido um estudo empírico com o objetivo de avaliar se as métricas aqui propostas são capazes de identificar as soft skills que cada indivíduo possui.
+Para tal validação, estamos nos baseando na relação que existe entre as soft skills e os fatores de personalidade. Propomos comparar se o resultado obtido através da aplicação das métricas identificam as soft skills associadas aos fatores de personalidade de um indivíduo.
+
+Para ter conhecimento a respeito da personalidade dos usuários que fazem parte de nosso estudo, os convidamos para responder um breve questionário sobre os fatores de personalidade descritos pelo FFM. Este questionário é chamado de Ten-Item Personality Invetory (TIPI) \cite{gosling:03}.
+
+Para comparar os resultados das métricas e do questionário de personalidade, estamos considerando o coeficiente de correlação de Pearson. Nossos resultados indicam que as métricas para identificação das soft skills análise e resolução de problemas, atenção aos detalhes, aprendizagem rápida e persistência são satisfatórios. Por outro lado, as métricas das soft skills comunicação e trabalho independente não apresentam os resultados desejados. 
+
+Apesar de não ter sido possível validar todas as métricas, a maioria delas pode ser aplicada para identificação automática de soft skills. Além disso, outras contribuições deste trabalho incluem um melhor entendimento de quais são as soft skills importantes para o programador, trazendo informações para o profissional, no reconhecimento dos atributos que precisa desenvolver, para os educadores e aprendizes de programação no processo de desenvolvimento de suas habilidades. Além disso, para as empresas que terão maneiras de identificar os profissionais que precisam contratar, trazendo ainda melhorias para Huxley ou qualquer juiz online que implante as métricas que propomos e validamos.
+
+\section{Estrutura da dissertação}
+
+Deste ponto em diante, o trabalho de dissertação está dividido nos seguintes capítulos:
+
+\begin{itemize}
+
+	\item \textbf{Capítulo 2}: Trata a discussão teórica dos elementos que fundamentam esta pesquisa. A seção 2.1 explica o que são soft skills e porque são importantes para qualificação profissional. A seção 2.2 apresenta a teoria de personalidade abordada pelo Modelo dos Cinco Fatores (FFM), o qual foi aplicado para conceitualizar cada soft skill e para proceder com o estudo de validação.
+
+	\item \textbf{Capítulo 3}: Apresenta o levantamento das soft skills. Cada seção resume estudos que tratam da demanda por soft skills em profissionais de desenvolvimento de software. Focando no papel do programador, listamos quais soft skills adotamos nessa pesquisa.
+
+	\item \textbf{Capítulo 4}: Aborda a conceitualização das soft skills que escolhemos no capítulo anterior. Em cada seção explicamos o que significa possuir cada habilidade, por que ela é importante para o programador de software e como se aplica no contexto da profissão. Também nesse capítulo propomos, a associação que cada soft skill tem com os fatores de personalidade descritos pelo FFM.
+
+	\item \textbf{Capítulo 5}: Descreve a estratégia adotada para identificação automática das soft skills. Na seção 5.1 apresentamos o juiz online Huxley e suas principais funcionalidades. A seção 5.2 propõe sete métricas para identificação das soft skills.
+
+	\item \textbf{Capítulo 6}: Descreve o estudo de validação. A seção 6.1 traz informações a respeito dos participantes. A seção 6.2 apresenta o material utilizado no estudo. E a seção 6.3 explica o procedimento de aplicação do questionário de personalidade.
+
+	\item \textbf{Capítulo 7}: Trata dos resultados. Aqui apresentamos, na seção 7.1, as correlações entre os itens do questionário TIPI, para analisar a consistência das respostas dos participantes. Já na seção 7.2 apresentamos as correlações entre os itens do questionário TIPI e as métricas das soft skills. 
+
+	\item \textbf{Capítulo 8}: Conclui este trabalho de dissertação, discutindo os resultados encontrados e também indicando trabalhos futuros para continuação e aperfeiçoamento desta pesquisa.
+	
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Capítulo 2                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Primeiro capítulo do desenvolvimento}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+Primeiro capítulo do desenvolvimento
+
+\chapter{Segundo capítulo do Desenvolvimento}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+
+No ambiente de edição de texto \LaTeX, 
+os textos podem ser divididos em fragmentos
+(parte \index{parte}, capítulo \index{capítulo!\verb=\=chapter}, 
+seção \index{seção}, subseção \index{subseção}, etc.).
+Em cada um dos fragmentos de um texto,
+o primeiro parágrafo \index{parágrafo} nunca é identado.
+
+
+Texto do segundo parágrafo.
+Continuação do texto.
+Continuação do texto.
+Continuação do texto.
+Continuação do texto.
+
+Texto de um novo parágrafo.
+Continuação do texto.
+Continuação do texto.
+Continuação do texto.
+Continuação do texto.
+
+
+\section{Primeira seção do segundo capítulo}
+
+Texto inicial...
+Texto inicial...
+Texto inicial...
+Texto inicial...
+Texto inicial...
+Texto inicial...
+Texto inicial...
+Texto inicial...
+
+\section{Segunda seção do segundo capítulo}
+
+Mais texto... Mais texto...
+Mais texto... Mais texto...
+Mais texto... Mais texto...
+Mais texto... Mais texto...
+
+\section{Terceira seção do segundo capítulo}
+
+Texto ... Texto ...
+Texto ... Texto ...
+Texto ... Texto ...
+Texto ... Texto ...
+
+\section{Quarta seção do segundo capítulo}
+
+Um alerta sobre a divisão do texto um subpartes 
+deve ser feito, conforme exemplo abaixo. 
+
+\subsection{Primeira subseção da quarta seção do segundo capítulo}
+
+Texto ... Texto ...
+Texto ... Texto ...
+Texto ... Texto ...
+Texto ... Texto ...
+
+\subsubsection{Primeira subsubseção da primeira subseção 
+               da quarta seção do segundo capítulo}
+
+Deve-se notar que uma subsubseção não é mais numerada,
+como é feito com o capítulo, com a seção e com a subseção.
+
+No \LaTeX, 
+considera-se que a quebra excessiva do texto em subpartes 
+confunde o leitor,
+pois, além de se ater ao assunto do texto, 
+ele ainda é obrigado a manter sua atenção presa à estrutura do texto. 
+
+Ao invés de quebrar o texto em inúmeras subpartes,
+recomenda-se que o texto seja melhor construído,
+chegando-se, no máximo, na profundidade de uma subsubseção.
+
+Para maiores informações, consulte o site do Comprehensive TeX Archive Network \cite{website:ctan}.
+
+
+\chapter{Tópicos diversos do Desenvolvimento}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+\section{Citações longas}
+
+\begin{flushright}
+\begin{minipage}{0.75\textwidth} % 75% de 160; margem para citações longas
+\begin{quotation}
+``O importante é não parar de questionar. A curiosidade tem sua própria razão
+para existir. Uma pessoa não pode deixar de se sentir reverente ao contemplar
+os mistérios da eternidade, da vida, da maravilhosa estrutura da realidade. Basta
+que a pessoa tente apenas compreender um pouco mais desse mistério a cada dia.
+Nunca perca uma sagrada curiosidade". Albert Einstein
+\end{quotation}
+\end{minipage}
+\end{flushright}
+
+\section{Tabelas}
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|}
+		  \hline
+			A & B & A + B \\ \hline
+			0 & 0 & 0 \\ \hline
+			0 & 1 & 1 \\ \hline
+			1 & 0 & 1 \\ \hline
+			1 & 1 & 1 \\ \hline
+		\end{tabular}
+		\caption{Tabela verdade para porta OR.}
+\end{table}
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|}
+		  \hline
+			A & B & $\overline{A + B}$ \\ \hline
+			0 & 0 & 1 \\ \hline
+			0 & 1 & 0 \\ \hline
+			1 & 0 & 0 \\ \hline
+			1 & 1 & 0 \\ \hline
+		\end{tabular}
+		\caption{Tabela verdade para porta NOR.}
+\end{table}
+
+É possível criar uma tabela com multicolunas onde uma célula pode ser construída 
+com o agrupamento de células vizinhas em uma linha:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|cc|} \hline
+		1a linha 1a coluna & \multicolumn{2}{|c|}{2a e 3a colunas mescladas nesta linha}\\ \hline
+		2a linha 1a coluna & 2a linha 2a coluna & 2a linha 3a coluna \\
+		3a linha 1a coluna & 3a linha 2a coluna & 3a linha 3a coluna \\ \hline
+	\end{tabular}
+	\caption{Tabela utilizando o comando multicolumn.}
+\end{table}
+
+
+\section{Figuras}
+
+Para inserir figuras deve-se colocar no preâmbulo o pacote graphicx e depois usar o comando
+que permite inserir figura.
+
+Por exemplo:
+
+\begin{verbatim}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm, height=6cm, angle=30, scale=0.5]{grafico1.jpg}
+    \caption{Título da figura.}
+    \label{fig:NomeDeReferenciaParaAFigura}
+  \end{figure}
+\end{verbatim}
+
+No exemplo acima, o arquivo \emph{grafico1.jpg} deve estar no mesmo diretório
+do arquivo contendo o texto. 
+
+Deve ser observado que nenhuma figura foi adicionada ao documento 
+para que este template fosse disponibilizado em arquivo único.
+
+
+
+\section{Referências}
+
+Abaixo, 
+são apresentados alguns exemplos simples de referências bibliográficas.
+Uma referência completa sobre todos os tipos de citações pode ser encontrada
+em \cite{norma:esjo2005}.
+
+Exemplos:
+
+Exemplo de referência simples \cite{livro:circuit}.
+
+Exemplo de referência dupla \cite{livro:circuit} e \cite{book:signal}.
+
+Exemplo de referência múltipla ($> 2$) \cite{livro:circuit}--\cite{book:signal}.
+
+\section{Equações}
+
+Existem diversas formas de incluir equações em um documento elaborado em \LaTeX.
+Deve-se notar que elas podem ser inseridas no meio do texto como em destaque.
+
+No meio do texto: A equação $a^{2}=b^{2}+c^{2}$ representa...
+
+Em destaque: \[ a^{2}=b^{2}+c^{2} \]
+
+É possível escrever equações que envolvam símbolos utilizados em Cálculo.
+A seguir, serão apresentados alguns exemplos.
+
+Série de Fourier na forma complexa:
+
+\begin{equation}
+	f(t) = \sum_{n=-\infty}^{\infty} c_{n} \; e^{\frac{i \pi n t}{L}}
+\end{equation}
+
+onde:
+
+\begin{equation}
+	c_{n} = \frac{1}{2L} \int_{c}^{c+2L} f(t) \, c_{n} \; e^{-\frac{i \pi n t}{L}} \; dt
+\end{equation}
+
+\vspace{5mm}
+
+Equações de Maxwell para campos variantes no tempo:
+
+Na forma integral:
+
+\begin{equation}
+	\oint \vec{H} \cdot d\vec{L} = \int \Bigg( \vec{J}+\frac{\partial \vec{D}}{\partial t} \Bigg) d\vec{S} 
+\end{equation}
+
+\begin{equation}
+	\oint \vec{E} \cdot d\vec{L} = - \int \frac{\partial \vec{B}}{\partial t} \; d\vec{S} 
+\end{equation}
+
+\begin{equation}
+	\int_{S} \vec{D} \cdot d\vec{S} = \int_{V} \rho \; d\vec{V}
+\end{equation}
+
+\begin{equation}
+	\int_{S} \vec{B} \cdot d\vec{S} = 0
+\end{equation}
+
+Na forma diferencial:
+
+\begin{equation}
+	\nabla \times \vec{H} = \vec{J}+\frac{\partial \vec{D}}{\partial t}
+\end{equation}
+
+\begin{equation}
+	\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}
+\end{equation}
+
+\begin{equation}
+	\nabla \cdot \vec{D} = \rho
+\end{equation}
+
+\begin{equation}
+	\nabla \cdot \vec{B} = 0
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Conclusão                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conclusão}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+A conclusão é a finalização do trabalho textual. Com base nas argumentações dos itens do desenvolvimento, será realizada a conclusão das idéias apresentadas na monografia.
+
+Nesta etapa deve ser usada uma linguagem mais direta, visando à persuasão do leitor. Além disso, é importante evitar períodos muito longos e fazer uso de conectivos para juntar as idéias, a fim de tornar o texto o mais lógico possível. Uma conclusão fraca arrasará sua monografia, pois um trabalho sem um ponto final é um trabalho inacabado. Portanto, muita atenção com a conclusão, pois ela pode decidir se seu trabalho foi bem-sucedido ou não.
+
+Enfim, a conclusão é a convergência das idéias tratadas em toda sua monografia, visto que há um encaminhamento das mesmas, 
+através de pensamentos lógicos, para uma definição.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          Sugestões para trabalhos futuros            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Sugestões para trabalhos futuros}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+Com base no trabalho desenvolvido, diversas vertentes de trabalhos futuros podem ser identificadas.
+%
+Tais vertentes, assim como trabalhos individuais em cada vertente, podem ser listados e resumidos.
+%
+Dessa forma, novas pesquisas podem ser sugeridas, dando continuidade ao trabalho em questão.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Referências Bibliográficas                     % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{thebibliography}{10}
+% \addcontentsline{toc}{chapter}{Referências Bibliográficas}
+
+% \thispagestyle{myheadings}
+
+\bibliographystyle{acm} % estilo de bibliografia
+\bibliography{bibliography} % arquivos com as entradas bib.
+
+% \end{thebibliography}
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%
+% Fim do modelo %
+%%%%%%%%%%%%%%%%%
+
