@@ -5,14 +5,112 @@
 
 \chapter{Conceituação das soft skills}
 
-Neste capítulo, explicamos a importância das soft skills que escolhemos para esta pesquisa, as quais foram listadas no Capítulo \ref{cap:research}. Aqui discutimos suas aplicações na profissão do programador de software e propomos um mapeamento com os traços de personalidade descritos pelo Modelo dos Cinco Fatores. O objetivo deste capítulo é esclarecer o significado de cada soft skill e encontrar informações suficientes para desenvolver formas de identificá-las automaticamente.
+\label{chap:concepts}
+\thispagestyle{empty} % retira numeracao da pagina, conforme as normas de apresentacao.
+
+Neste capítulo, explicamos a importância das soft skills que escolhemos para esta pesquisa, as quais foram listadas no Capítulo \ref{chap:research}. Aqui discutimos suas aplicações na profissão do programador de software e propomos um mapeamento com os fatores de personalidade descritos pelo Modelo dos Cinco Fatores. O objetivo deste capítulo é esclarecer o significado de cada soft skill e encontrar informações suficientes para desenvolver formas de identificá-las automaticamente.
 
 \section{Análise e resolução de problemas}
 
+Os programadores de software são responsáveis por traduzir a partir de projeto de software de código-fonte. A essência da programação é a aplicação de conhecimentos de lógica para escrever algoritmos para resolver problemas. Os programadores precisam seguir um processo lógico e aplicar um raciocínio analítico quando são codificação, identificação de variáveis, a criação de classes e funções, determinando o fluxo de execução do programa e construção de instruções em linguagens de programação.
+O desenvolvimento de software é, fundamentalmente, uma profissão de resolução de problemas que requer capacidade de entender e articular várias idéias em um processo que inclui analisar, sintetizar e avaliar todas as soluções possíveis, a fim de escolher o melhor.
+
+Um indivíduo que tem a capacidade de analisar e resolver problemas goza de lidar com os problemas de programação de diferentes níveis de dificuldades assuntos. Podemos mapear essas habilidades com consciência, pois implicam um desejo de fazer a programação bem as tarefas. Pessoas com esta habilidade são obediente e apontar para conseguir a resolução de problemas com eficiência. Além disso, eles tendem a pensar com cuidado antes de agir, o que também é um traço de consciência. Além disso, como mencionado no ponto 2.2.2., Rehman [10] relacionado analisar e habilidades para resolver problemas de fator Socialização.
+
+Para determinar uma forma de identificação automática de essas habilidades em um indivíduo que use sua interação com Huxley. Aqui nós propomos duas métricas, um está relacionado com a resolução de problemas, e o outro está relacionada com analisaram os problemas.
+
+Resolvendo problemas de métrica leva em conta quantas soluções um usuário submeter a Huxley. Quanto mais um usuário envia pedidos para o sistema, mais ela demonstra aproveitar a resolução de problemas de programação. Por exemplo, dependendo do nível de dificuldade de um problema, os utilizadores podem apresentar várias vezes para o resolver. No entanto, observe que isso não é necessariamente uma coisa ruim em relação ao processo de aprendizagem e prática, que é a essência de Huxley. Submeter muitas vezes significa que os usuários estão de alguma forma estudar e praticar continuamente.
+
+Solução de problemas: Número total de submissões um usuário enviado para Huxley.
+
+Para tornar a resolver pontuação problema ser avaliada de zero a 100, precisamos tomar um valor de referência. Este valor de referência é o número máximo de apresentação de um utilizador enviado para Huxley. Portanto, o usuário que enviou mais soluções para o sistema irá marcar 100. A pontuação dos demais usuários serão calculados relativamente a este por uma regra de três.
+
+No entanto, quando considerado isolado, um elevado número de submissões também pode significar que o aluno não está analisando o problema muito bem antes de tentar uma e outra vez, mas ainda recebendo respostas erradas. Desta forma, propomos a análise de problemas métrica, considerando o número de submissões corretas, tendo em conta quantos problemas que um usuário foi capaz de resolver e os níveis desses problemas.
+Para cada apresentação correta, o usuário recebe uma pontuação de pontuação, dependendo do nível do problema esta submissão responde. Por exemplo, quando um usuário resolve um problema de nível 1, ela ganha um ponto. Da mesma forma, se o problema é o nível 2, ela recebe 2 pontos. A pontuação máxima é de 10 para o nível 10 problemas submissões.
+Agora, vamos CORscore ser a soma da pontuação de submissões corretos. Além disso, deixe subescore ser a soma da pontuação de todas as submissões. A métrica para análise e resolução de problemas é:
+
+Analisar os problemas = CORscore / subescore * 100.
+
+Note-se que esta métrica soft skill pode ser avaliar de zero a 100. Como o usuário envia soluções corretas, a pontuação tende a 100. Caso contrário, como o usuário envia soluções erradas, a pontuação tende a zero.
+
 \section{Atenção aos detalhes}
+
+Ao desenvolver um sistema, especialmente na fase de programação, é importante que ter atenção porque o programador de software precisa entender todos os detalhes do projeto de software e interpretar corretamente os requisitos. Existem vários arquivos de código e manipular. É também necessário conhecer muitas ferramentas e tecnologias. Um programador precisa usar de forma completa todos os recursos disponíveis para realizar suas atividades, assim ela deve permanecer sempre atenta aos detalhes e rapidamente aprender sobre eles.
+Em termos psicológicos, esta habilidade suave corresponde ao fator de personalidade conscienciosidade. Diz-se que as pessoas com alta pontuação nesta característica tendem a ser bom em prestar atenção aos detalhes, porque eles são minucioso, cuidadoso. Segundo Rehman mapeamento [10], a atenção aos detalhes pode ser relacionado a abertura à experiência, de forma negativa, pois as pessoas com essa característica tendem a ver o retrato grande facilidade e, para eles, preenchendo os detalhes pode sentir desgastante.
+
+A atenção aos detalhes soft skill leva o profissional a atualizar continuamente seus conhecimentos e manter-se bem informados sobre o ambiente de trabalho. Ela também leva à percepção de detalhes que outras pessoas podem não notar, permitindo ao programador a surgir com soluções inovadoras para os problemas e as tarefas atribuídas.
+Um indivíduo que tenha atenção aos detalhes pode lidar com todos os recursos e tecnologias com quem trabalha. No contexto de um juiz de linha, o usuário precisa saber sistema e saber como tirar proveito de todas as suas características.
+
+Por exemplo, para cada problema de Huxley existe um exemplo de entrada e saída na descrição do problema. Esta entrada e saída é o primeiro caso de teste a cada apresentação é avaliada com. Um usuário atento deve sempre olhar com cuidado sobre isso, para que ela escreva a sua solução, seguindo o exemplo. Com isso, ela evitaria apresentar soluções que falham no primeiro caso teste. Além disso, ela não iria apresentar soluções que levam Huxley para erros de compilação, porque ela conhece a linguagem de programação a sintaxe é.
+Para identificar se um usuário tem atenção a detalhes, podemos analisar esses pontos. Para um usuário, deixe SYNERR ser o número de apresentação que foram avaliadas com erros de compilação. Vamos IOERR ser o número de submissão que falhou no primeiro caso de teste. SUBS é o número total de apresentação por parte do utilizador. Definir a métrica como se segue:
+
+Atenção aos detalhes: (1 - SYNERR + IOERR / SUBS) * 100
+
+Note-se que, se o usuário sempre fazer observações com erros de sintaxe ou cometer erros sobre o exemplo de entrada / saída, o quociente SYNERR + IOERR / SUBS é um deles. Portanto, atenção aos detalhes pontuação torna-se zero. No entanto, se ela sempre evitar esses erros simples, sua atenção aos detalhes é marcar um.
 
 \section{Aprendizagem rápida}
 
+Aprendizagem rápida é a capacidade de absorver informações e novos conhecimentos em um tempo relativamente curto. As pessoas que tem esta habilidade suave normalmente aprender sobre novos conceitos, metodologias e tecnologias facilmente. Considerando o papel de programadores de software, essa capacidade é especialmente importante devido à evolução da tecnologia ea necessidade de manter-se atualizado.
+
+Curiosidade, busca de coisas novas para aprender, apreciação de novas experiências e interesses amplos são atributos de indivíduos que possuem essa habilidade macio. Em teoria FFM, eles estão associados com abertura à experiência.
+
+Além disso, as características do fator de conscientização, como a responsabilidade e dedicação ao estudo, desenvolvimento intelectual contínuo, eficiência e foco na aquisição de novos conhecimentos, são necessários de um indivíduo que procura aprender rápido. Essa qualidade leva um indivíduo a aspirar níveis elevados e de aprender mais rápido do que aqueles que permanecem distraídos e atrasada. Assim, ambos os fatores se juntam para definir psicologicamente essa habilidade macio.
+
+Para identificar aprendizagem rápida é necessário estabelecer um critério de comparação, uma vez que esta habilidade soft é a capacidade de aprender comparativamente mais rápido. Em Huxley, os usuários são agrupados por classes. Para propor uma métrica para identificar o aprendizado rápido, estamos considerando a classe como fator comparativo.
+Para calcular a pontuação de aprendizagem rápida, primeiro determinar para cada usuário Huxley sua velocidade para resolver problemas. Tomai a soma da pontuação submissões corretos para cada dia. Considerando-se dois dias diferentes e seqüenciais (DAY0 e DAYf), em que o usuário enviou, a velocidade é dada por:
+
+VELOCIDADE = Pontuação na DAYf - Score nas DAY0 / Dias entre DAY0 e DAYf
+
+Continuamos cálculo da velocidade em uma janela de seis meses, que é o período em que o grupo o usuário pertence está tendo aulas. Depois disso, calcula-se a variação de velocidade para obter a ACC, o que vai significar a aceleração média de aprendizagem.
+
+Precisamos ter um valor de referência para afirmar pontuação rápido aprendizado entre zero a 100. Este valor de referência é o ACC máxima obtida para cada grupo. Em seguida, a pontuação para esta habilidade macio é calculada com a regra de três, tomando como referência a maior aceleração de aprendizagem no grupo o usuário pertence. Assim, o usuário que aprendeu mais rápido em cada grupo vai marcar 100. A pontuação dos demais será calculado relativamente a isso.
+
 \section{Persistência}
 
+Uma pessoa persistente é capaz de manter a mesma energia e esforço para alcançar seus objetivos, apesar das dificuldades, falhas e oposições. Esta é uma habilidade macia relevante para os programadores, uma vez que é comum encontrar dificuldades na compreensão e solução de problemas. Independentemente disso, a persistência vai levar o profissional a cumprir suas tarefas, garantindo que ela é confiável e responsável, portanto, eficiente. A aplicação de persistência é muitas vezes o que faz a distinção entre aqueles que são bem sucedidos e aqueles que falham muito cedo.
+
+Enfrentando problemas de programação, por exemplo, podemos reconhecer essa habilidade suave em indivíduos que não desiste até conseguir a solução correta. Não importa quão difícil o problema poderia ser, ela não desistir até realizar seu objetivo de resolvê-lo. Erros em tentativas iniciais não desanima, porque ela não permite que a solução para permanecer aberto.
+
+Mapeamos a habilidade suave persistência é o fator de conscientização, já que é uma tendência para mostrar autodisciplina, agir lealmente, e apontar para conquista contra as medidas ou expectativas externas.
+
+Propomos a métrica com base em quantas vezes um usuário continua tentando resolver um problema. Quanto mais um usuário envia submissões, mais ela demonstra estar praticando continuamente. Mesmo que ela não está batendo uma solução certa, ela está se esforçando e, eventualmente, acertar um. Além disso, mesmo após a solução certa, ela pode tentar enviar novamente para melhorá-lo. Esse tipo de comportamento mostra a persistência.
+
+Para marcar na persistência propomos o seguinte resultado: Vamos CR ser o número de problemas resolvidos por um usuário, excluindo esses problemas que ela corretamente resolver em suas primeiras tentativas. Aconselhamos a não contar esses problemas, porque uma vez que ela estava certa em sua primeira tentativa, ela não tem chance de aplicar habilidade persistência. Agora vamos Probs ser o número total de problemas experimentados.
+
+Aqui poderíamos dividido COR por Probs para obter a pontuação persistência. No entanto, ainda precisamos atencioso quando o usuário tentou várias vezes um problema. Mesmo que ela não poderia bater a solução ainda, pelo menos ela se esforçou. Então, considere que o AVG é a média de tentativas de resolver um problema P em Huxley. Além disso, vamos ICONoveravg ser o número de problemas não resolvidos que o número de tentativas é sobre AVG.
+
+Persistência = CR + ICONoveravg / probs.
+
+Assim, para alcançar a pontuação máxima na persistência, que é de 100, o usuário não deve deixar que os problemas que ela tentou, sem uma solução, ou pelo menos ela tem que tentar duro para resolvê-los. Por outro lado, se um utilizador tentar pelo menos uma vez resolver os problemas, mas nunca chega-se à solução, a sua pontuação de persistência é zero.
+
 \section{Comunicação}
+
+As habilidades de comunicação envolve ser capaz de comunicar oralmente e por escrito. É a capacidade de interpretar e expressa pensamentos e idéias. Esta é uma característica muito importante para programadores, pois eles precisam entender os requisitos escritos e gerar documentação e artefatos que serão lidos para os profissionais fases seguintes em testes e manutenção.
+
+Em muitas situações, os programadores precisam conversar com a equipe e gestores para apresentar suas idéias ou implementações e discutir sobre novas soluções. Precisamos também de consideração metodologias de programação, tais como Scrum, que requer reuniões constantes, e XP, onde os programadores trabalham em pares. Em ocasiões como essa, eles precisam aplicar as habilidades de comunicação.
+
+As habilidades de comunicação pode estar relacionado com a extroversão. Ser extrovertido pode permitir que você seja mais adaptável em seu comportamento de comunicação, principalmente com a habilidade oral, porque as pessoas que buscam o contato com o mundo externo, como a conversa, iniciar conversas, então eles tendem a desenvolver a capacidade de se expressar. Por outro lado, as teorias psicológicas sobre as preferências de comportamento [14] explicam que os introvertidos tendem a preferir a comunicação escrita como forma de expressão.
+
+No contexto da programação, propomos que alguém que tem habilidades de comunicação gera documentação de seus artefatos escrito. Ela é usada para comentar seus códigos-fonte. Além disso, no contexto de um sistema on-line juiz, ela usa recursos de bate-papo para entrar em contato com outros usuários, tem como objetivo fazer amigos na comunidade e participa em fóruns.
+
+Nós poderíamos fazer uso de todas essas características para definir métricas para identificar habilidades de comunicação. No entanto, Huxley não tem um chat ou fórum recursos. Por isso, estamos usando apenas os comentários no código-fonte. Para um usuário, siga os arquivos de código-fonte de seus envios corretos. Para cada arquivo de origem selecionada, verifique se ele tem comentários. Seja C a contagem de arquivos de origem que tenham pelo menos um comentário TOTAL formiga o número de arquivos analisados. A métrica de comunicação é definido como segue:
+
+Comunicação = C / TOTAL;
+
+Note-se que, o valor da comunicação é entre 0 e 100. Se o usuário comentou todos os seus últimos 50 arquivos de origem, assim que sua pontuação Comunicação é 100. Por outro lado, se ela nunca comentar seus últimos 50 arquivos de origem, sua pontuação Comunicação é zero.
+
+\section{Trabalho independente}
+
+Apesar da necessidade de se comunicar com a equipe, um programador essencialmente tem que trabalhar de forma independente. O núcleo de programação exige concentração por muitas horas. A maioria das tarefas de programação, como determinar os pormenores da lógica módulo, estabelecendo layout de arquivo e codificação de programas são atividades e decisões que devem ser tomadas isoladamente.
+
+Também podemos dizer que, se alguém pode realizar tarefas com o mínimo de supervisão e resolução de problemas de programação, sem necessidade de pedir a outra pessoa para ajudar, mesmo diante de altos problemas difíceis, ela pode trabalhar de forma independente.
+
+Para ser capaz de trabalhar de forma independente, uma pessoa precisa para ser confortável em estar sozinho. De acordo com as teorias da personalidade, essa habilidade macio tem uma relação com o fator extroversão [10], que caracterizam as pessoas com baixos escores nesta dimensão, porque os introvertidos são reservados e como atividades solitárias.
+
+Huxley oferece duas maneiras de pedir ajuda. No sistema, quando os usuários têm dúvidas eles podem enviar uma pergunta sobre uma submissão, que dirigiu a um professor ou alguém que é responsável por seu grupo. Esta outra pessoa lhe responde escrevendo comentários de ajuda para a questão. A outra forma é quando um usuário enviar uma resposta errada eles podem ler uma dica, que é um comentário escrito pelo autor do problema informando qual foi o erro ou como obter a solução certa. Para ler a dica é opcional.
+
+Vamos TIP ser o número de dicas que um usuário aceitar a visualizar e ajudar a ser o número de submissão que o usuário pedir e receber comentários de ajuda. Chame SUBS o total de inscrições de um usuário. A métrica de trabalho representa, independentemente:
+
+Trabalhar de forma independente = (1 - TIP + AJUDA / SUBS) * 100
+
+Note-se que, se um usuário pedir dicas ou ajuda para todos os seus envios a TIP quociente + Ajuda / SUBS será como um valor, levando Trabalho marcar de forma independente a 0. O oposto disso é quando um usuário nunca pedir ajuda ou dicas. Em seguida, trabalhar de forma independente pontuação é de 100.
