@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1580
-NormalPos.bottom=545
+NormalPos.right=2060
+NormalPos.bottom=822
 Class=LaTeXView
-Document=chapters\metrics.tex
+Document=chapters\evaluation.tex
 
 [Frame0_View0,0]
-TopLine=45
-Cursor=93
+TopLine=64
+Cursor=6395
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1580
-NormalPos.bottom=545
+NormalPos.right=2060
+NormalPos.bottom=822
 Class=LaTeXView
-Document=chapters\research.tex
+Document=dissertation.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=0
+Cursor=488
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1580
-NormalPos.bottom=545
+NormalPos.right=2060
+NormalPos.bottom=822
 Class=LaTeXView
-Document=chapters\evaluation.tex
+Document=chapters\metrics.tex
 
 [Frame2_View0,0]
-TopLine=45
-Cursor=3699
+TopLine=314
+Cursor=22898
 
 [Frame3]
 Flags=0
@@ -65,16 +65,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1580
-NormalPos.bottom=545
+NormalPos.right=2060
+NormalPos.bottom=822
 Class=LaTeXView
-Document=chapters\introduction.tex
+Document=chapters\results.tex
 
 [Frame3_View0,0]
-TopLine=131
-Cursor=10910
+TopLine=221
+Cursor=16025
 
 [SessionInfo]
 FrameCount=4
-ActiveFrame=2
+ActiveFrame=3
 
