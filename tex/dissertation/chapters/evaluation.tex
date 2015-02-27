@@ -18,11 +18,11 @@ Para explicar o estudo de validação, apresentamos os participantes e o materia
 
 Os participantes do estudo de validação são usuários do Huxley e estudantes matriculados nas disciplinas de Programação dos cursos de Ciência da Computação e Engenharia da Computação, na Universidade Federal de Alagoas. A Tabela \ref{tab:participantes} distribui o número de participantes por semestre e curso:
 
-\begin{table*}[h]
+\begin{table*}[ht]
 \footnotesize
 \caption{\small Participantes}
 \addtolength{\tabcolsep}{-3.5pt}
-\renewcommand{\arraystretch}{1.7} 
+\renewcommand{\arraystretch}{1.4} 
 \centering
 
 \begin{tabular}{|c|c|c|}
@@ -51,7 +51,7 @@ Também faz parte do material empregado neste estudo um questionário a respeito
 
 De acordo com os autores, o questionário TIPI pode ser utilizado como alternativa a instrumentos longos, como o NEO PI-R, que contém 240 itens. Isso nos oferece mais espaço e tempo para focar no que está mais diretamente relacionado a nossa pesquisa, ou seja, as soft skills. Na Figura \ref{fig:tipi}, observe o questionário TIPI em sua versão original.
 
-\begin{figure}[h*]
+\begin{figure}[ht]
 \centering
 \caption{\small Ten-Item Personality Inventory (TIPI)}
 \includegraphics[width=.9\textwidth]{tipi.png}
@@ -62,8 +62,15 @@ De acordo com os autores, o questionário TIPI pode ser utilizado como alternati
 \section{Procedimento}
 \label{sec:procedimento}
 
-O procedimento do estudo de validação pode ser descrito em três passos, conforme ilustrado na Figura \ref{img:estudo}.
+O procedimento do estudo de validação pode ser descrito em três passos, conforme ilustrado na Figura \ref{fig:estudo}.
 No primeiro passo, aplicamos as métricas que detalhamos na seção \ref{sec:metrics} para cada participante, utilizando a base de dados do Huxley. O período que consideramos para a coleta dos dados inicia-se na data de cadastro do usuário. A partir dessa data, analisamos a participação do mesmo, segundo a Tabela \ref{tab:dadosmetricas}, durante seis meses de uso do sistema. Esse período foi definido de acordo com o tempo do curso de Programação, período no qual os usuários mais utilizam o Huxley.%, que é de um semestre.
+
+\begin{figure}[ht]
+\centering
+\caption{\small Procedimento do estudo de validação} 
+\includegraphics[width=.99\textwidth]{estudo.png}
+\label{fig:estudo}
+\end{figure}
 
 Em seguida, no passo 2, preparamos o questionário TIPI para aplicá-lo ao grupo de participantes. O TIPI foi traduzido para português buscando-se manter o significado de cada item. A fim de esclarecer o objetivo do questionário, também foram adicionadas informações contextuais junto aos itens. Essas informações adicionais tratam-se de frases curtas que permitem ao participante entender que suas respostas devem ser dadas de acordo com seu comportamento enquanto pratica atividades de programação. Como recomendado por \cite{john:99}, adicionar esclarecimentos ou informações contextuais em instrumentos curtos é importante para evitar problemas de mal-entendimento, como ambiguidade ou significados múltiplos.
 O Apêndice \ref{ap:tipi} apresenta o instrumento que aplicamos durante este estudo de validação, podemos ler os itens do TIPI e as informações contextuais que adicionamos.
@@ -75,4 +82,4 @@ Então, para atingir o objetivo deste estudo, verificamos se os resultados que e
 Para isso, estamos considerando o coeficiente de correlação de Pearson entre as pontuações das soft skills e pontuações do teste de personalidade.
 Baseamos esse estudo, na relação que existe entre as soft skills e os fatores de personalidade que discutimos no capítulo \ref{chap:concepts}.
 
-Nossa hipótese é a seguinte: Uma métrica para identificação de soft skill pode ser validada se a mesma avalia sua respectiva soft skill em um nível que condiz com os traços de personalidade do indíviduo. Isso porque, se o indíviduo possui um determinado traço de personalidade, ele tende a possuir as soft skills relacionados a esse traço.
+Nossa hipótese é a seguinte: Uma métrica para identificação de soft skill pode ser validada se a mesma avalia sua respectiva soft skill em um nível que condiz com os traços de personalidade do indivíduo. Isso porque, se o indivíduo possui um determinado traço de personalidade, ele tende a possuir as soft skills relacionados a esse traço.
