@@ -7,7 +7,7 @@
 
 \label{chap:metrics}
 
-Conhecemos a importância das soft skills para o processo de contratação na subseção \ref{subsec:ss-importance}. Nesse contexto, é comum que as empresas encontrem dificuldades para identificar habilidades de seus candidatos. Isso porque identificar soft skills é uma tarefa que consome tempo, pois é necessário conhecer o indivíduo e seu comportamento durante um determinado período, até ter condições de reconhecer suas habilidades. Para minimizar esse problema, apresentamos uma estratégia que foca no papel do programador de software e visa identificar soft skills de maneira automática.
+A importância das soft skills para o processo de contratação foi apresentada na subseção \ref{subsec:ss-importance}. Nesse contexto, é comum que as empresas encontrem dificuldades para identificar habilidades de seus candidatos. Isso porque identificar soft skills é uma tarefa que consome tempo, pois é necessário conhecer o indivíduo e seu comportamento durante um determinado período, até ter condições de reconhecer suas habilidades. Para minimizar esse problema, apresentamos uma estratégia que foca no papel do programador de software e visa identificar soft skills de maneira automática.
 
 %Dividimos a estratégia para identificaçao automática de soft skills em três passos: (1) Levantamento de soft skills, (2) Conceituação das soft skills, (3) Desenvolvimento de métricas para identificação das soft skills. Podemos observar esses passos na Figura \ref{fig:estrategia}.
 
@@ -28,7 +28,7 @@ Na seção \ref{sec:huxley}, tratamos das principais características de um juiz
 
 \begin{figure}[ht]
 \centering
-\caption{\small Estratégia para identificação automática de soft skills} 
+\caption{\small Estratégia para identificação automática das soft skills} 
 \includegraphics[width=.99\textwidth]{estrategia.png}
 \label{fig:estrategia}
 \end{figure}
@@ -39,9 +39,16 @@ Na seção \ref{sec:huxley}, tratamos das principais características de um juiz
 Juiz online é um sistema que disponibiliza um conjunto de problemas de programação a serem resolvidos através da criação e codificação de algoritmos. O usuário do sistema pode acessar os problemas e submeter soluções para os mesmos. O juiz online avalia essas submissões testando-as de acordo com um conjunto de casos de teste predefinidos. Se a submissão passa por todos os casos de teste, o sistema a avalia como correta. Caso contrário, o sistema avalia a submissão de acordo com um tipo de erro, por exemplo, resposta errada, erro de compilação, tempo limite excedido, etc.
 
 Nesse contexto, ao interagir com o sistema, os programadores geram dados que podemos coletar e aplicar a métricas, visando identificar soft skills automaticamente.
-São exemplos de juízes online os sites de competições e suporte à correção de código, tais como CodeAcademy (\textit{codeacademy.com}), CodeChef (\textit{codechef.com}), Code Avengers (\textit{codeavengers.com}), etc.
-Outros sistemas similares são os repositórios de cursos Khan Academy (\textit{khanacademy.org}), Udacity (\textit{udacity.com}) e CodeSchool (\textit{codeschool.com}).
-Neste estudo, adotamos o juiz online Huxley \cite{paes:13}, sistema disponível para acesso através do endereço \textit{thehuxley.com}.
+São exemplos de juízes online os sites de competições e suporte à correção de código, tais como 
+CodeAcademy (\href{codeacademy.com}{\textit{codeacademy.com}}), 
+CodeChef (\href{codechef.com}{\textit{codechef.com}}), 
+Code Avengers (\href{codeavengers.com}{\textit{codeavengers.com}}), etc.
+Outros sistemas similares são os repositórios de cursos 
+Khan Academy (\href{khanacademy.org}{\textit{khanacademy.org}}), 
+Udacity (\href{udacity.com}{\textit{udacity.com}}) e 
+CodeSchool (\href{codeschool.com}{\textit{codeschool.com}}).
+Neste estudo, adotamos o juiz online Huxley \cite{paes:13}, sistema disponível para acesso através do endereço 
+\href{thehuxley.com}{\textit{thehuxley.com}}.
 
 A maioria dos usuários do juiz online Huxley são estudantes de programação. O Huxley oferece uma base com mais de 450 problemas de programação, organizados por níveis de dificuldade (um a 10) e por tópico: decisão, repetição, recursão, ordenação, ponteiro, string, array bidimensional, pilha, grafo, alocação dinâmica, etc.
 
@@ -78,7 +85,7 @@ A seguir, iremos apresentar as métricas para identificação de soft skills dos
 
 \subsection{Análise e resolução de problemas}
 
-Para desenvolver as métricas de identificação automática dessas habilidades em um indivíduo, utilizamos sua interação com o sistema Huxley. Aqui propomos duas métricas, uma está relacionada com a habilidade de Resolução de problemas. A outra, está relacionada com Análise de problemas.
+Para desenvolver as métricas de identificação automática destas habilidades em um indivíduo, utilizamos sua interação com o sistema Huxley. Aqui propomos duas métricas, uma está relacionada com a habilidade de Resolução de problemas. A outra, está relacionada com Análise de problemas.
 
 A métrica Resolução de problemas leva em conta a quantidade de soluções, ou seja, quantas submissões um usuário envia ao Huxley. Quanto mais um usuário envia submissões ao sistema, mais ele demonstra gostar de resolver problemas de programação. Por exemplo, dependendo do nível de dificuldade do problema, o usuário pode ter que apresentar diversas submissões ao sistema para conseguir resolvê-lo. No entanto, observe que isso não é necessariamente uma coisa ruim, por conta do processo de aprendizagem e prática de programação, que é a essência do Huxley. Enviar muitas submissões significa que o usuário está de alguma forma estudando e praticando programação continuamente.
 
@@ -101,13 +108,13 @@ Agora, dado que $CORRECT_{SCORE}$ é a soma das pontuações das submissões cor
 \mbox{Análise de problemas } = \frac{CORRECT_{SCORE}}{SUBMISSIONS_{SCORE}} * 100
 \end{equation}
 
-Note que a métrica dessa soft skill pode ser avaliada entre zero e 100. Quanto mais o usuário envia submissões corretas, sua pontuação tende a 100. Caso contrário, se o usuário envia muitas submissões erradas, sua pontuação tende a zero.
+Note que a métrica desta soft skill pode ser avaliada entre zero e 100. Quanto mais o usuário envia submissões corretas, sua pontuação tende a 100. Caso contrário, se o usuário envia muitas submissões erradas, sua pontuação tende a zero.
 
 \subsection{Atenção a detalhes}
 
 Um indivíduo que presta atenção a detalhes é capaz de utilizar de forma completa todos os recursos disponíveis para realizar suas atividades. No contexto de um juiz online, o usuário atento precisa conhecer bem o sistema e saber como tirar proveito de todas as suas funcionalidades.
 
-Por exemplo, para cada problema do Huxley existe um exemplo de entrada e saída na descrição do problema. Esta entrada e saída é o primeiro caso de teste que avalia cada submissão. Um usuário atento deve sempre observar cuidadosamente essa funcionalidade, para escrever sua submissão seguindo o exemplo. Com isso, ele evita apresentar soluções que falham no primeiro caso de teste.
+Por exemplo, para cada problema do Huxley existe um exemplo de entrada e saída na descrição do problema. Essa entrada e saída é o primeiro caso de teste que avalia cada submissão. Um usuário atento deve sempre observar cuidadosamente essa funcionalidade, para escrever sua submissão seguindo o exemplo. Com isso, ele evita apresentar soluções que falham no primeiro caso de teste.
 
 Além disso, um usuário atento não apresenta submissões que causam erros de compilação, porque ele conhece os detalhes de sintaxe da linguagem que utiliza, e provavelmente testa seu código antes de submetê-lo.
 
@@ -123,9 +130,9 @@ No entanto, se ele sempre está atento para evitar esses erros simples, o quocie
 
 \subsection{Aprendizagem rápida}
 
-Para identificar Aprendizagem rápida, é necessário estabelecer um critério de comparação, uma vez que essa soft skill diz respeito a capacidade de aprender em um tempo relativamente curto. No juiz online Huxley, os usuários estão agrupados por turma, equivalente a classe no curso de programação de que fazem parte. Para propor a métrica de aprendizagem rápida, estamos considerando a turma como fator comparativo.
+Para identificar Aprendizagem rápida, é necessário estabelecer um critério de comparação, uma vez que esta soft skill diz respeito a capacidade de aprender em um tempo relativamente curto. No juiz online Huxley, os usuários estão agrupados por turma, equivalente a classe no curso de programação de que fazem parte. Para propor a métrica de aprendizagem rápida, estamos considerando a turma como fator comparativo.
 
-No cálculo dessa métrica, primeiramente, determinamos para cada usuário do Huxley sua velocidade para resolver problemas, ou seja, para obter pontuação em submissões corretas. Tomamos a soma das pontuações das submissões corretas do usuário, $CORRECT_{score}$, para cada dia considerando dois dias diferentes e sequenciais ($DAY_0$ e $DAY_f$). Assim, a velocidade $SPEED$ para resolver problemas é dada por:
+No cálculo desta métrica, primeiramente, determinamos para cada usuário do Huxley sua velocidade para resolver problemas, ou seja, para obter pontuação em submissões corretas. Tomamos a soma das pontuações das submissões corretas do usuário, $CORRECT_{score}$, para cada dia considerando dois dias diferentes e sequenciais ($DAY_0$ e $DAY_f$). Assim, a velocidade $SPEED$ para resolver problemas é dada por:
 
 \begin{equation} \label{m:velocidade}
 SPEED = \frac {CORRECT_{score} \mbox{ em } DAY_f - CORRECT_{score} \mbox{ em } DAY_0 }
@@ -185,7 +192,7 @@ Sabemos que se alguém pode resolver problemas de programação com o mínimo de
 
 O Huxley oferece duas maneiras de pedir ajuda. Caso o usuário esteja com dúvidas diante de uma submissão, ele pode deixar uma pergunta no sistema, a qual será encaminhada ao professor responsável ou monitores de disciplina. O professor ou monitor, então, responde a dúvida escrevendo comentários para auxiliar na resolução do problema. Outra forma de pedir ajuda é quando um usuário tem uma submissão que não foi avaliada como correta. Nesse caso, o sistema oferece a oportunidade de ler uma dica, que é um comentário escrito pelo autor do problema informando qual foi o erro ou como obter a solução certa. No entanto, ler essa dica é opcional.
 
-Seja $TIPS$ o número de submissões em que o usuário aceitou visualizar a dica e $HELPS$, o número de submissões em que o usuário pediu e recebeu comentários de ajuda. Chame $SUBMISSIONS$ o número de submissões do usuário. A métrica que representa Trabalho independente é dada por:
+Seja $TIPS$ o número de submissões que o usuário aceitou visualizar a dica e $HELPS$, o número de submissões que o usuário pediu e recebeu comentários de ajuda. Chame $SUBMISSIONS$ o número de submissões do usuário. A métrica que representa Trabalho independente é dada por:
 
 \begin{equation} \label{m:independente}
 \mbox{Trabalho independente } = \left(1 - \frac {TIPS + HELP}{SUBMISSIONS}\right) * 100

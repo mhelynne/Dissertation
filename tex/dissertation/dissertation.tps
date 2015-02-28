@@ -12,12 +12,12 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1580
-NormalPos.bottom=612
+NormalPos.bottom=464
 Class=LaTeXView
-Document=chapters\results.tex
+Document=chapters\research.tex
 
 [Frame0_View0,0]
-TopLine=9
+TopLine=0
 Cursor=178
 
 [Frame1]
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1580
-NormalPos.bottom=612
+NormalPos.bottom=464
 Class=LaTeXView
-Document=chapters\conclusion.tex
+Document=chapters\results.tex
 
 [Frame1_View0,0]
-TopLine=62
-Cursor=6231
+TopLine=239
+Cursor=15751
 
 [SessionInfo]
 FrameCount=2

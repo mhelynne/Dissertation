@@ -16,7 +16,8 @@
 %\usepackage{enumerate}
 %\usepackage{enumitem}
 %\usepackage{array}
-\usepackage[flushleft]{threeparttable}
+%\usepackage[flushleft]{threeparttable}
+%\usepackage{hyperref} %url
 \usepackage{pifont}   %tick character
 \usepackage{multirow} %multiple rows in tables
 \usepackage{rotating} %rotate tables
@@ -27,12 +28,10 @@
 
 %%%%%%%%%%%
 
-\titulo{Soft Skills do Programador de Software: Abordagem Conceituacal e Definição de Métricas para Identificação Automática no Contexto de um Sistema de Juiz Online}
+\titulo{Soft Skills do Programador de Software: Abordagem Conceitual e Definição de Métricas para Identificação Automática no Contexto de um Sistema de Juiz Online}
 \autor{Maria Helynne Lima Silva}
 \data{2015}
 \orientador{Prof. Dr. Rodrigo de Barros Paes}
-
-%\imprimirCentro[Eh NOIX]
 
 %Inicio do documento
 \begin{document}
@@ -71,7 +70,7 @@ Meus sinceros agradecimentos!
 
 Soft skills são características associadas a personalidade de um indivíduo.
 Consideradas relevantes para compor o perfil de um profissional qualificado, elas melhoram o desempenho no trabalho.
-Diante de sua importância, empresas de Tecnologia da Informação necessitam entender quais soft skills são necessárias para cada papel no processo de desenvolvimento de software.
+Diante de sua importância, empresas de Tecnologia da Informação precisam entender quais soft skills são necessárias para cada papel no processo de desenvolvimento de software.
 Além disso, durante o processo de contratação, essas empresas precisam identificar soft skills em candidatos, a fim de descobrir quais deles possuem as características exigidas para os cargos disponíveis.
 No entanto, a identificação de soft skills é uma tarefa difícil, pois exige conhecer um indivíduo e seu comportamento por um tempo. 
 Normalmente também requer esforços como entrevistas e recomendações, tendo sido observada a falta de abordagens automáticas nesse contexto.
@@ -79,7 +78,7 @@ Esta dissertação propõe uma estratégia para minimizar o problema da identifi
 Tal estratégia foca no papel do programador de software e tem como objetivo encontrar formas para identificar automaticamente soft skills de indivíduos nesse papel.
 Para isso, propomos um conjunto de métricas que pontuam soft skills.
 Coletamos essas métricas a partir de um juiz online, de acordo com o desempenho e atividades de usuários no sistema.
-Para avaliar as métricas propostas, conduzimos um estudo empírico envolvendo 32 estudantes de cursos de programação.
+Para avaliar as métricas propostas, conduzimos um estudo empírico envolvendo 56 estudantes de cursos de programação.
 Nossos resultados indicam que as métricas para identificar as soft skills Análise e resolução de problemas, Atenção a detalhes, Aprendizagem rápida e Persistência são satisfatórias.
 Por outro lado, as métricas relativas às soft skills de Comunicação e Trabalho independente não alcançaram resultados significativos.
 
@@ -92,7 +91,19 @@ Por outro lado, as métricas relativas às soft skills de Comunicação e Trabal
 \begin{resumo}[Abstract]
 \begin{otherlanguage*}{english}
 
-Abstract...
+Soft skills are characteristics associated with an individual's personality.
+They are relevant to professional qualification because they improve the performance at work.
+Since they are important, Information Technology companies need to understand the soft skills to each role in software development process.
+Additionally, during the hiring process these companies need to identify soft skills in candidates to find out which one of them have the required characteristics to fit the available jobs.
+However, soft skills identification is a hard task because it takes time to know an individual's behavior and normally uses interviews or recommendations.
+Therefore, we notice a lack of automatic approaches in this context.
+This dissertation proposes a strategy to minimize the problem of soft skills identification.
+The strategy focus on the role of software programmers and it aims to find ways to automatically identify soft skills of individuals in this role.
+To do so, we propose a set of metrics that evaluate soft skills.
+We collect the metrics from an online judge system, according to its users' performance and activities.
+To evaluate the metrics, we conduct an empirical study regarding 56 students of programming courses.
+Our results indicate that the metrics to identify Analytical and solving problems skills, Attention to details, Fast learning and Persistence are satisfactory.
+On the other hand, Communication and Work independently skills did not reach significant results.
 
 \posresumo
 
@@ -133,10 +144,7 @@ Abstract...
 
 \apendices
 
-\chapter{Questionário para avaliação de soft skills do programador}
-\label{ap:tipi}
-
-Inserir o questionário aqui.
+\input{appendix/tipi.tex}
 
 \end{document}
 
