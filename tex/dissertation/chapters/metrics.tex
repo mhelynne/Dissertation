@@ -7,12 +7,12 @@
 
 \label{chap:metrics}
 
-A importância das soft skills para o processo de contratação foi apresentada na subseção \ref{subsec:ss-importance}. Nesse contexto, é comum que as empresas encontrem dificuldades para identificar habilidades de seus candidatos. Isso porque identificar soft skills é uma tarefa que consome tempo, pois é necessário conhecer o indivíduo e seu comportamento durante um determinado período, até ter condições de reconhecer suas habilidades. Para minimizar esse problema, apresentamos uma estratégia que foca no papel do programador de software e visa identificar soft skills de maneira automática.
+A importância das soft skills para o processo de contratação foi apresentada na Seção \ref{subsec:ss-importance}. Nesse contexto, é comum que as empresas encontrem dificuldades para identificar habilidades de seus candidatos. Isso porque identificar soft skills é uma tarefa que consome tempo, pois é necessário conhecer o indivíduo e seu comportamento durante um determinado período, até ter condições de reconhecer suas habilidades. Para minimizar esse problema, apresentamos uma estratégia que foca no papel do programador de software e visa identificar soft skills de maneira automática.
 
 %Dividimos a estratégia para identificaçao automática de soft skills em três passos: (1) Levantamento de soft skills, (2) Conceituação das soft skills, (3) Desenvolvimento de métricas para identificação das soft skills. Podemos observar esses passos na Figura \ref{fig:estrategia}.
 
 Essa estratégia está baseada, inicialmente, em entender o significado das soft skills, para então buscar formas de identificá-las.
-Até este ponto, fizemos o levantamento de algumas soft skills do referido papel, tema abordado no capítulo \ref{chap:research}. Em seguida, no capítulo \ref{chap:concepts}, formamos uma base teórica e conceitual a respeito das soft skills.
+Até este ponto, fizemos o levantamento de algumas soft skills do referido papel, tema abordado no Capítulo \ref{chap:research}. Em seguida, no Capítulo \ref{chap:concepts}, formamos uma base teórica e conceitual a respeito das soft skills.
 Agora iremos detalhar a estratégia em si.
 
 Para atingir o objetivo de identificar soft skills de maneira automática, levamos em consideração alguns pontos. Primeiramente, sabemos que é preciso conhecer o comportamento do indivíduo para reconhecer suas habilidades. Portanto, propomos que, para identificar as soft skills de um programador, é necessário observá-lo em suas atividades de programação. Além disso, como a identificação deve ocorrer automaticamente, precisamos utilizar um ambiente que possibilite a coleta automática de informações a respeito do comportamento de um programador.
@@ -24,7 +24,7 @@ Assim, nossa estratégia consiste no desenvolvimento de métricas que atribuem u
 %Portanto, dividimos a estratégia para identificaçao automática de soft skills em três passos: (1) Escolha de um juiz online, (2) Desenvolvimento de métricas, (3) Coleta de métricas utilizando a base de dados do juiz online. Podemos observar esses passos na Figura \ref{img:strategy}.
 
 A Figura \ref{fig:estrategia} ilustra nossa estratégia, explicando-a em três passos.
-Na seção \ref{sec:huxley}, tratamos das principais características de um juiz online e apresentamos o sistema que adotamos nesta dissertação, abordando o passo 1. Adicionalmente, na seção \ref{sec:metrics}, propomos as métricas para identificação de soft skills nos usuários de um juiz online, constituindo o passo 2. Já no passo 3, explicamos a aplicação das métricas e como obter as pontuações de cada soft skill dos usuários do juiz online, através do exemplo da seção \ref{sec:exemplo-metricas}.
+Na Seção \ref{sec:huxley}, tratamos das principais características de um juiz online e apresentamos o sistema que adotamos nesta dissertação, abordando o passo 1. Adicionalmente, na Seção \ref{sec:metrics}, propomos as métricas para identificação de soft skills nos usuários de um juiz online, constituindo o passo 2. Já no passo 3, explicamos a aplicação das métricas e como obter as pontuações de cada soft skill dos usuários do juiz online, através do exemplo da Seção \ref{sec:exemplo-metricas}.
 
 \begin{figure}[ht]
 \centering
@@ -40,17 +40,20 @@ Juiz online é um sistema que disponibiliza um conjunto de problemas de programa
 
 Nesse contexto, ao interagir com o sistema, os programadores geram dados que podemos coletar e aplicar a métricas, visando identificar soft skills automaticamente.
 São exemplos de juízes online os sites de competições e suporte à correção de código, tais como 
-CodeAcademy (\href{codeacademy.com}{\textit{codeacademy.com}}), 
+Code Avengers (\href{codeavengers.com}{\textit{codeavengers.com}}),
+Codecademy (\href{codecademy.com}{\textit{codecademy.com}}), 
 CodeChef (\href{codechef.com}{\textit{codechef.com}}), 
-Code Avengers (\href{codeavengers.com}{\textit{codeavengers.com}}), etc.
-Outros sistemas similares são os repositórios de cursos 
-Khan Academy (\href{khanacademy.org}{\textit{khanacademy.org}}), 
-Udacity (\href{udacity.com}{\textit{udacity.com}}) e 
-CodeSchool (\href{codeschool.com}{\textit{codeschool.com}}).
+Codeforces (\href{codeforces.com}{\textit{codeforces.com}}), 
+Topcoder (\href{topcoder.com}{\textit{topcoder.com}}),
+ entre outros.
+%Outros sistemas similares são os repositórios de cursos 
+%Khan Academy (\href{khanacademy.org}{\textit{khanacademy.org}}), 
+%Udacity (\href{udacity.com}{\textit{udacity.com}}) e 
+%CodeSchool (\href{codeschool.com}{\textit{codeschool.com}}).
 Neste estudo, adotamos o juiz online Huxley \cite{paes:13}, sistema disponível para acesso através do endereço 
 \href{thehuxley.com}{\textit{thehuxley.com}}.
 
-A maioria dos usuários do juiz online Huxley são estudantes de programação. O Huxley oferece uma base com mais de 450 problemas de programação, organizados por níveis de dificuldade (um a 10) e por tópico: decisão, repetição, recursão, ordenação, ponteiro, string, array bidimensional, pilha, grafo, alocação dinâmica, etc.
+A maioria dos usuários do juiz online Huxley são estudantes de programação. O Huxley oferece uma base com mais de 450 problemas de programação, organizados por níveis de dificuldade (1 a 10) e por tópico: decisão, repetição, recursão, ordenação, ponteiro, string, array bidimensional, pilha, grafo, alocação dinâmica, etc.
 
 A base de dados do Huxley também armazena todas as submissões de seus usuários. Atualmente, existem cerca de 150,000 submissões, corrigidas de acordo com os tipos de avaliação do Huxley: Correta, Resposta errada, Erro de apresentação, Erro de compilação, Resposta vazia, Erro de execução, Tempo limite excedido, Nome errado de arquivo. 
 Nos casos quando a submissão não é avaliada como Correta, o Huxley oferece dicas ao usuário para auxiliá-lo a resolver o problema. 
@@ -59,7 +62,7 @@ O Huxley é utilizado em diversas universidades e faculdades com cursos na área
 
 No Huxley, cada usuário pode desenvolver seu próprio ritmo na prática de programação. Não existe uma ordem para resolução dos problemas, havendo liberdade para interagir com o sistema de acordo com os níveis dos mesmos. A cada submissão correta, o usuário recebe uma pontuação para incentivá-lo, no entanto, ele não é penalizado caso tenha submissão avaliada como errada. Os usuários também são ordenados de acordo com suas pontuações, compondo um ranking de programadores, chamado de TopCoder.
 
-A Figura \ref{fig:huxley} é uma captura da página do perfil de um usuário do Huxley, nela podemos observar quantos problemas o mesmo resolveu, sua pontuação e posição no TopCoder, além de um gráfico ilustrativo da porcentagem de acerto nos tópicos com que ele trabalhou.
+A Figura \ref{fig:huxley} é uma captura da página do perfil de um usuário do Huxley. Nela podemos observar quantos problemas o mesmo resolveu, sua pontuação e posição no TopCoder, além de um gráfico ilustrativo da porcentagem de acerto nos tópicos com que ele trabalhou.
 Por motivos de privacidade, estamos apresentando dados de um usuário fictício.
 %Mostra também o TopCoder em fevereiro de 2015.
 
@@ -77,15 +80,15 @@ Como exemplo de como podemos utilizar o Huxley para coletar métricas, podemos a
 \section{Métricas} 
 \label{sec:metrics}
 
-Como dito anteriormente, as métricas que propomos são alternativas que auxiliam na medição do nível de cada soft skill em um individuo de acordo com seu comportamento em atividades de programação. As soft skills que visamos medir são: Análise e resolução de problemas, Atenção a detalhes, Aprendizagem rápida, Persistência, Comunicação e Trabalho independente.
+Como dito anteriormente, as métricas que propomos são alternativas que auxiliam na medição do nível de cada soft skill em um indivíduo de acordo com seu comportamento em atividades de programação. As soft skills que visamos medir são: Análise e resolução de problemas, Atenção a detalhes, Aprendizagem rápida, Persistência, Comunicação e Trabalho independente.
 
-Cada métrica avalia uma soft skill com um valor no intervalo de zero a 100. Quanto maior o valor resultante da métrica para uma determinada soft skill, significa que o individuo possui essa habilidade mais desenvolvida. Dessa forma, se uma soft skill for medida em zero, significa que o indivíduo não possui essa habilidade. Se o valor for 100, ele possui a habilidade de uma maneira ótima. Escolhemos avaliar cada soft skill em um intervalo de zero a 100, para que fosse possível ordenar os resultados dos indivíduos e conhecer suas principais habilidades, bem como, as que precisam de melhoria.
+Cada métrica avalia uma soft skill com um valor no intervalo de zero a 100. Quanto maior o valor resultante da métrica para uma determinada soft skill, significa que o indivíduo possui essa habilidade mais desenvolvida. Dessa forma, se uma soft skill for medida em zero, significa que o indivíduo não possui essa habilidade. Se o valor for 100, ele possui a habilidade de uma maneira ótima. Escolhemos avaliar cada soft skill em um intervalo de zero a 100, para que fosse possível ordenar os resultados dos indivíduos e conhecer suas principais habilidades, bem como, as que precisam de melhoria.
 
 A seguir, iremos apresentar as métricas para identificação de soft skills dos usuários do Huxley. Embora essas métricas tenham sido aplicadas a um sistema específico, elas também  podem ser empregadas em sistemas similares, ou seja, podem ser adaptadas para outros juízes online.
 
 \subsection{Análise e resolução de problemas}
 
-Para desenvolver as métricas de identificação automática destas habilidades em um indivíduo, utilizamos sua interação com o sistema Huxley. Aqui propomos duas métricas, uma está relacionada com a habilidade de Resolução de problemas. A outra, está relacionada com Análise de problemas.
+Para desenvolver as métricas de identificação automática destas habilidades em um indivíduo, utilizamos sua interação com o sistema Huxley. Aqui propomos duas métricas: uma está relacionada com a habilidade de Resolução de problemas e outra está relacionada com Análise de problemas.
 
 A métrica Resolução de problemas leva em conta a quantidade de soluções, ou seja, quantas submissões um usuário envia ao Huxley. Quanto mais um usuário envia submissões ao sistema, mais ele demonstra gostar de resolver problemas de programação. Por exemplo, dependendo do nível de dificuldade do problema, o usuário pode ter que apresentar diversas submissões ao sistema para conseguir resolvê-lo. No entanto, observe que isso não é necessariamente uma coisa ruim, por conta do processo de aprendizagem e prática de programação, que é a essência do Huxley. Enviar muitas submissões significa que o usuário está de alguma forma estudando e praticando programação continuamente.
 
@@ -102,7 +105,7 @@ No entanto, quando consideramos apenas o número de submissões isoladamente, um
 
 Para cada submissão correta, o usuário do Huxley recebe uma pontuação dependendo do nível do problema que essa submissão responde. Por exemplo, quando um usuário resolve o problema de nível 1, ela ganha um ponto. Da mesma forma, se o problema é o nível 2, ele recebe 2 pontos. A pontuação máxima é 10, para submissões corretas de problemas nível 10.
 
-Agora, dado que $CORRECT_{SCORE}$ é a soma das pontuações das submissões corretas do usuário. Além disso, dado que $SUBMISSIONS_{SCORE}$ é a soma das pontuações de todas as submissões do usuário. A métrica para Análise de problemas é:
+Agora, dado que $CORRECT_{SCORE}$ é a soma das pontuações das submissões corretas do usuário. Além disso, seja $SUBMISSIONS_{SCORE}$ a soma das pontuações de todas as submissões do usuário. A métrica para Análise de problemas é:
 
 \begin{equation} \label{m:analise}
 \mbox{Análise de problemas } = \frac{CORRECT_{SCORE}}{SUBMISSIONS_{SCORE}} * 100
@@ -121,7 +124,7 @@ Além disso, um usuário atento não apresenta submissões que causam erros de c
 Dessa forma, para identificar se um usuário possui a soft skill Atenção a detalhes, podemos analisar esses pontos. Para um usuário, seja $IO_{ERROR}$ o número de submissões que falham no primeiro caso de teste, e $SYNTAX_{ERROR}$ o número de submissões que foram avaliadas com erros de compilação. Seja ainda $SUBMISSIONS$ o número total de submissões por parte do usuário ao sistema. Definimos a métrica como se segue:
 
 \begin{equation} \label{m:atencao}
-\mbox{Atenção aos detalhes } = \left(1 - \frac {IO_{ERROR} + SYNTAX_{ERROR}}{SUBMISSIONS}\right) * 100
+\mbox{Atenção a detalhes } = \left(1 - \frac {IO_{ERROR} + SYNTAX_{ERROR}}{SUBMISSIONS}\right) * 100
 \end{equation}
 
 Note que, se o usuário sempre envia submissões com erros de sintaxe ou erra no exemplo de entrada/saída, o quociente 
@@ -132,10 +135,10 @@ No entanto, se ele sempre está atento para evitar esses erros simples, o quocie
 
 Para identificar Aprendizagem rápida, é necessário estabelecer um critério de comparação, uma vez que esta soft skill diz respeito a capacidade de aprender em um tempo relativamente curto. No juiz online Huxley, os usuários estão agrupados por turma, equivalente a classe no curso de programação de que fazem parte. Para propor a métrica de aprendizagem rápida, estamos considerando a turma como fator comparativo.
 
-No cálculo desta métrica, primeiramente, determinamos para cada usuário do Huxley sua velocidade para resolver problemas, ou seja, para obter pontuação em submissões corretas. Tomamos a soma das pontuações das submissões corretas do usuário, $CORRECT_{score}$, para cada dia considerando dois dias diferentes e sequenciais ($DAY_0$ e $DAY_f$). Assim, a velocidade $SPEED$ para resolver problemas é dada por:
+No cálculo desta métrica, primeiramente, determinamos para cada usuário do Huxley sua velocidade para resolver problemas, ou seja, para obter pontuação em submissões corretas. Tomamos a soma das pontuações das submissões corretas do usuário, $CORRECT_{SCORE}$, para cada dia considerando dois dias diferentes e sequenciais ($DAY_0$ e $DAY_f$). Assim, a velocidade $SPEED$ para resolver problemas é dada por:
 
 \begin{equation} \label{m:velocidade}
-SPEED = \frac {CORRECT_{score} \mbox{ em } DAY_f - CORRECT_{score} \mbox{ em } DAY_0 }
+SPEED = \frac {CORRECT_{SCORE} \mbox{ em } DAY_f - CORRECT_{SCORE} \mbox{ em } DAY_0 }
               { \mbox{ Dias entre } DAY_0 \mbox{ e } DAY_f }
 \end{equation}
 
@@ -147,7 +150,7 @@ Precisamos ainda tomar um valor de referência para avaliar a métrica de Aprend
 \mbox{Aprendizagem rápida } = \frac{SPEED}{SPEED_{MAX}} * 100
 \end{equation}
 
-Assim, o usuário que aprendeu mais rápido em cada grupo vai marcar 100. A pontuação dos demais é calculada relativamente a essa.
+Assim, o usuário que aprendeu mais rápido em cada turma vai marcar 100. A pontuação dos demais é calculada relativamente a essa.
 
 \subsection{Persistência}
 
@@ -156,13 +159,13 @@ Esse comportamento está relacionado a persistência diante de adversidades na r
 
 % Além disso, mesmo depois de uma solução correta, o usuário pode tentar submeter novamente, tentando melhorar o algoritmo. Esse tipo de comportamento também demonstra persistência.
 
-Para medir a soft skill Persistência, considere que $CORRECT_{PROBLEMS}$ é número de problemas resolvidos por um usuário, excluindo os problemas que foram resolvidos corretamente na primeira tentativa. Considere ainda que $PROBLEMS$ é o número total de problemas que o usuário já tentou resolver, também sem contar os que foram acertados na primeira tentativa. Recomendamos não contar com esses problemas, porque como a solução foi obtida com apenas uma tentativa, o usuário não teve necessidade de demonstrar um comportamento persistente.
+Para medir a soft skill Persistência, considere que $CORRECT_{PROBLEMS}$ é o número de problemas resolvidos por um usuário, excluindo os problemas que foram resolvidos corretamente na primeira tentativa. Considere ainda que $PROBLEMS$ é o número total de problemas que o usuário já tentou resolver, também sem contar os que foram aceitos na primeira tentativa. Recomendamos não contar com esses problemas, porque como a solução foi obtida com apenas uma tentativa, o usuário não teve necessidade de demonstrar um comportamento persistente.
 
 Aqui poderíamos dividir $CORRECT_{PROBLEMS}$ por $PROBLEMS$ para obter uma medida de Persistência.
 No entanto, é interessante também levar em conta aqueles problemas que o usuário tentou várias vezes. Os quais, mesmo que ele que ainda não tenha obtido uma solução, pelo menos, tenha se esforçado para resolver. Então, calculamos a média de tentativas feitas pelos usuários até acertar cada problema do Huxley.
 
 A partir disso, chame $EFFORT_{PROBLEMS}$ o número de problemas não resolvidos, mas que o número de tentativas foi acima da média de tentativas para cada um desses problemas. 
-Por exemplo, se a média de tentativas até acertar o problema $\#1$ é $4$, e para o problema $\#2$ é $10$. Se o usuário tentou $5$ vezes, mais ainda não acertou o problema $\#1$, e o problema $\#2$, tentou $8$ vezes. O problema $\#1$ será contado em $EFFORT_{PROBLEMS}$. Mas o problema $\#2$ não será, pois o número de tentativas foi menor que a média de tentativas para resolver o problema.
+Por exemplo, se a média de tentativas até acertar o problema $\#1$ é $4$, e para o problema $\#2$ é $10$. Se o usuário tentou $5$ vezes, mas ainda não acertou o problema $\#1$, e o problema $\#2$, tentou $8$ vezes. O problema $\#1$ será contado em $EFFORT_{PROBLEMS}$. Mas o problema $\#2$ não será, pois o número de tentativas foi menor que a média de tentativas para resolver o problema.
 
 Assim, propomos a métrica:
 

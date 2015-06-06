@@ -10,7 +10,7 @@
 
 \label{chap:introduction}
 
-Dados os avanços da tecnologia, a popularização do uso de computadores e aplicação da informática em diversas áreas como ciência, educação, saúde e etc., o mercado de trabalho do setor de Tecnologia da Informação (TI) apresenta alta demanda por profissionais. Segundo um estudo encomendado pela Cisco na América Latina e realizado pela empresa de consultoria IDC \cite{cisco:13}, o Brasil já é o 4º maior centro de TI do mundo, ficando atrás apenas dos Estados Unidos, China e Japão. TI é o segmento do mercado brasileiro que mais cresce. 
+Dados os avanços da tecnologia, a popularização do uso de computadores e a aplicação da informática em diversas áreas como ciência, educação, saúde e etc., o mercado de trabalho do setor de Tecnologia da Informação (TI) apresenta alta demanda por profissionais. Segundo um estudo encomendado pela Cisco na América Latina e realizado pela empresa de consultoria IDC \cite{cisco:13}, o Brasil já é o 4º maior centro de TI do mundo, ficando atrás apenas dos Estados Unidos, China e Japão. TI é o segmento do mercado brasileiro que mais cresce. 
 
 % www.cisco.com/assets/csr/pdf/IDC_Skills_Gap_-_LatAm.pdf
 
@@ -28,7 +28,7 @@ No entanto, há uma crescente consciência de que apenas as habilidades técnica
 
 Habilidades não-técnicas, conhecidas como soft skills, são características associadas à personalidade, como por exemplo, ser comunicativo, persistente, atencioso, etc. As soft skills guiam um indivíduo em suas ações, decisões e comportamento. Um profissional que busca desenvolver soft skills irá apresentar capacidade de influência, maior liderança e gestão de relacionamento \cite{hjyunus:12}.
 
-Como as soft skills são relevante para qualificação, as empresas de desenvolvimento de software necessitam compreender quais delas são requeridas para os profissionais no desempenho de suas atividades. Principalmente durante o processo de contratação, elas precisam saber identificar entre os candidatos, quais dele possuem o conjunto de soft skills necessárias para cumprir os requisitos das vagas disponíveis.
+Como as soft skills são relevantes para qualificação, as empresas de desenvolvimento de software necessitam compreender quais delas são requeridas para os profissionais no desempenho de suas atividades. Principalmente durante o processo de contratação, elas precisam saber identificar entre os candidatos, quais deles possuem o conjunto de soft skills necessárias para cumprir os requisitos das vagas disponíveis.
 % Quando se trata de contratação de profissionais, as empresas normalmente não conhecem os seus candidatos com antecedência. Portanto, é difícil identificar se eles têm as habilidades sociais necessárias para executar os empregos disponíveis.
 
 No entanto, a identificação de soft skills é uma tarefa que consome tempo, pois é necessário conhecer o indivíduo e seu comportamento durante um determinado período, até ter condições de reconhecer suas habilidades. Algumas vezes também, requer esforços como entrevistas com os candidatos ou recomendações externas.
@@ -58,7 +58,8 @@ Propomos desenvolver maneiras de identificá-las automaticamente. Para isso, lev
 
 Primeiramente, sabemos que, para identificar as soft skills de um programador, é necessário observá-lo em suas atividades de programação. Além disso, como a identificação deve ocorrer automaticamente, precisamos utilizar um ambiente que possibilite a coleta automática de informações a respeito do comportamento de um programador.
 
-Assim, nossa estratégia consiste no desenvolvimento de métricas que atribuem uma pontuação para cada soft skill de um programador. O ambiente em que podemos coletar essas métricas automaticamente é um juiz online, sistema no qual os usuários praticam atividades de programação. Esse tipo de sistema possui uma base de dados que guarda as interações de seus usuários, as quais podem ser analisadas a partir das referidas métricas, representando uma alternativa para identificação das soft skills.
+Assim, nossa estratégia consiste no desenvolvimento de métricas que atribuem uma pontuação para cada soft skill de um programador. O ambiente em que coletamos essas métricas automaticamente é um juiz online, sistema que disponibiliza um conjunto de problemas de programação a seus usuários para serem resolvidos através da criação e codificação de algoritmos. 
+Esse tipo de sistema foi adotado, pois possui uma base de dados que guarda as interações de seus usuários em atividades de programação, as quais podem ser analisadas a partir das referidas métricas, representando uma alternativa para identificação das soft skills.
 
 Portanto, os objetivos desta dissertação incluem conhecer as soft skills importantes para o programador de software e desenvolver formas de identificá-las de maneira automática, através da aplicação de métricas, no contexto de um juiz online.
 %, em estudantes de programação que são usuários de um juiz online.
@@ -90,7 +91,7 @@ Para validação das métricas, conduzimos um estudo empírico com o objetivo de
 
 \section{Relevância}
 
-As contribuições deste trabalho estão voltadas para ampliar a compreensão dos aspectos humanos relacionados ao perfil do programador. Como qualquer outra atividade de desenvolvimento de software, a programação envolve elementos humanos que precisam ser considerados, afinal os produtos de software são desenvolvidos por pessoas e para pessoas \cite{john:05}.
+As contribuições deste trabalho estão voltadas para ampliar a compreensão dos aspectos humanos relacionados ao perfil do programador. Como qualquer outra atividade de desenvolvimento de software, a programação envolve elementos humanos que precisam ser considerados. Afinal, os produtos de software são desenvolvidos por pessoas e para pessoas \cite{john:05}.
 
 Através do levantamento e conceituação das soft skills relevantes para papel do programador de software, esse profissional poderá entender o que o ambiente de trabalho exige, além de ser estimulado à reflexão sobre quais habilidades possui e quais precisam ser melhoradas.
 
@@ -111,7 +112,7 @@ Para tal validação, nos baseamos na relação que existe entre as soft skills 
 
 Para conhecer a respeito da personalidade dos usuários que fazem parte de nosso estudo, os convidamos para responder um breve questionário sobre os fatores de personalidade descritos pelo FFM. Esse questionário é chamado de Ten-Item Personality Invetory (TIPI) \cite{gosling:03}.
 
-Para comparar os resultados das métricas e do questionário de personalidade, estamos considerando o coeficiente de correlação de Pearson. Nossos resultados indicam que as métricas para identificação das soft skills análise e resolução de problemas, atenção aos detalhes, aprendizagem rápida e persistência são satisfatórios. Por outro lado, as métricas das soft skills comunicação e trabalho independente não apresentam os resultados desejados. 
+Para comparar os resultados das métricas e do questionário de personalidade, estamos considerando o coeficiente de correlação de Pearson. Nossos resultados indicam que as métricas para identificação das soft skills Análise e resolução de problemas, Atenção aos detalhes, Aprendizagem rápida e Persistência são satisfatórios, dentro do contexto da base dados utilizada no estudo de validação. Por outro lado, as métricas das soft skills Comunicação e Trabalho independente não apresentam os resultados desejados. 
 
 Apesar de não ter sido possível validar todas as métricas, a maioria delas pode ser aplicada para identificação automática de soft skills. Além disso, outras contribuições deste trabalho incluem um melhor entendimento de quais são as soft skills importantes para o programador, trazendo informações para o profissional, no reconhecimento dos atributos que precisa desenvolver, para os educadores e aprendizes de programação, no processo de desenvolvimento de suas habilidades. Adicionalmente, empresas podem utilizar as métricas como alternativa para identificar os profissionais que precisam contratar. Trazendo ainda melhorias para Huxley ou qualquer juiz online que implante as métricas que propomos e validamos.
 
@@ -121,17 +122,17 @@ Deste ponto em diante, o trabalho de dissertação está dividido nos seguintes 
 
 \begin{itemize}
 
-	\item \textbf{Capítulo \ref{chap:theorical}}: Traz a discussão teórica dos elementos que fundamentam esta pesquisa. A seção \ref{sec:sskills} explica o que são soft skills. A seção \ref{sec:ffm} apresenta a teoria de personalidade abordada pelo Modelo dos Cinco Fatores (FFM), o qual foi aplicado para expor o conceito de cada soft skill e para proceder com o estudo de validação.
+	\item \textbf{Capítulo \ref{chap:theorical}}: Traz a discussão teórica dos elementos que fundamentam esta pesquisa. A Seção \ref{sec:sskills} explica o que são soft skills. A Seção \ref{sec:ffm} apresenta a teoria de personalidade abordada pelo Modelo dos Cinco Fatores (FFM), o qual foi aplicado para expor o conceito de cada soft skill e para proceder com o estudo de validação.
 
-	\item \textbf{Capítulo \ref{chap:research}}: Apresenta o levantamento das soft skills. Cada seção resume estudos que tratam da demanda por soft skills em profissionais de desenvolvimento de software. Focando no papel do programador, listamos quais soft skills adotamos nesta pesquisa.
+	\item \textbf{Capítulo \ref{chap:research}}: Apresenta o levantamento das soft skills. Cada Seção resume estudos que tratam da demanda por soft skills em profissionais de desenvolvimento de software. Focando no papel do programador, listamos quais soft skills adotamos nesta pesquisa.
 
-	\item \textbf{Capítulo \ref{chap:concepts}}: Aborda a conceituação das soft skills que escolhemos no capítulo anterior. Em cada seção, explicamos o que significa possuir cada habilidade, por que ela é importante para o programador de software e como se aplica no contexto da profissão. Nesse capítulo também propomos, a associação que cada soft skill tem com os fatores de personalidade descritos pelo FFM.
+	\item \textbf{Capítulo \ref{chap:concepts}}: Aborda a conceituação das soft skills que escolhemos no capítulo anterior. Em cada Seção, explicamos o que significa possuir cada habilidade, por que ela é importante para o programador de software e como se aplica no contexto da profissão. Nesse capítulo também propomos, a associação que cada soft skill tem com os fatores de personalidade descritos pelo FFM.
 
-	\item \textbf{Capítulo \ref{chap:metrics}}: Descreve a estratégia adotada para identificação automática das soft skills. Na seção \ref{sec:huxley}, apresentamos o juiz online Huxley e suas principais funcionalidades. Na seção \ref{sec:metrics}, propomos sete métricas para identificação das soft skills. 
+	\item \textbf{Capítulo \ref{chap:metrics}}: Descreve a estratégia adotada para identificação automática das soft skills. Na Seção \ref{sec:huxley}, apresentamos o juiz online Huxley e suas principais funcionalidades. Na Seção \ref{sec:metrics}, propomos sete métricas para identificação das soft skills. 
 
-	\item \textbf{Capítulo \ref{chap:evaluation}}: Descreve o estudo de validação. A seção \ref{sec:participantes} traz informações a respeito dos participantes. A seção \ref{sec:material} apresenta o material utilizado no estudo. E a seção \ref{sec:procedimento} explica o procedimento de aplicação do questionário de personalidade.
+	\item \textbf{Capítulo \ref{chap:evaluation}}: Descreve o estudo de validação. A Seção \ref{sec:participantes} traz informações a respeito dos participantes. A Seção \ref{sec:material} apresenta o material utilizado no estudo. E a Seção \ref{sec:procedimento} explica o procedimento de aplicação do questionário de personalidade.
 
-	\item \textbf{Capítulo \ref{chap:results}}: Trata dos resultados. Apresentamos, na seção \ref{sec:tipitipi}, as correlações entre os itens do questionário TIPI, para analisar a consistência das respostas dos participantes. Já na seção \ref{sec:tipiss}, apresentamos as correlações entre os itens do questionário TIPI e as métricas das soft skills. Discutimos os resultados na seção \ref{sec:discussao}.
+	\item \textbf{Capítulo \ref{chap:results}}: Trata dos resultados. Apresentamos, na Seção \ref{sec:tipitipi}, as correlações entre os itens do questionário TIPI, para analisar a consistência das respostas dos participantes. Já na Seção \ref{sec:tipiss}, apresentamos as correlações entre os itens do questionário TIPI e as métricas das soft skills. Discutimos os resultados na Seção \ref{sec:discussao}.
 
 	\item \textbf{Capítulo \ref{chap:conclusion}}: Conclui este trabalho de dissertação, discutindo os resultados encontrados e também indicando trabalhos futuros para continuação e aperfeiçoamento desta pesquisa.
 	
