@@ -23,4 +23,4 @@ $RECYCLE.BIN/
 *.tps
 
 # Correlation data folder/repository
-tex/dissertation/ss-data
+ss-data
