@@ -14,11 +14,11 @@ NormalPos.top=32
 NormalPos.right=1587
 NormalPos.bottom=641
 Class=LaTeXView
-Document=appendix\tipi.tex
+Document=chapters\conclusion.tex
 
 [Frame0_View0,0]
-TopLine=22
-Cursor=2288
+TopLine=0
+Cursor=6613
 
 [SessionInfo]
 FrameCount=1

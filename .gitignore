@@ -20,3 +20,7 @@ $RECYCLE.BIN/
 *.toc
 *.tmp
 *.ps
+*.tps
+
+# Correlation data folder/repository
+tex/dissertation/ss-data
