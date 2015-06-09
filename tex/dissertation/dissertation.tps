@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1502
-NormalPos.bottom=546
+NormalPos.right=1587
+NormalPos.bottom=641
 Class=LaTeXView
-Document=chapters\metrics.tex
+Document=appendix\tipi.tex
 
 [Frame0_View0,0]
-TopLine=234
-Cursor=18371
+TopLine=22
+Cursor=2288
 
 [SessionInfo]
 FrameCount=1
